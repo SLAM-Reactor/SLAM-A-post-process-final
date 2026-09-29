@@ -1,0 +1,9 @@
+Equilibrium: /pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/QI_coilset/eq_NFP2_A+9.0_tor+0.0_mr+0.10_shift+0.00_wd+0.00_elong+3.00_wellwt+2.0_vacuum_final2.h5
+Coilset: /pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/QI_coilset/NFP2_A8p7_coilset_40_coils_Bn_0p015_N9.h5
+NFP: 2
+Target rho: 0.95
+Transit count: 500
+Radial seeds: 17
+Poincare R/Z shape: (500, 2, 17)
+Equilibrium surface R/Z shape: (360, 17, 2)
+Saved: QI_poincare_rhop95_data.npz

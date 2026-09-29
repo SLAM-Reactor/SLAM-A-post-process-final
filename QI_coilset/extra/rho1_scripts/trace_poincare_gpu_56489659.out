@@ -1,0 +1,7 @@
+Equilibrium: eq_NFP2_A+9.0_tor+0.0_mr+0.10_shift+0.00_wd+0.00_elong+3.00_wellwt+2.0_vacuum_final2.h5
+Coilset: NFP2_A8p7_coilset_40_coils_Bn_0p015_N9.h5
+NFP: 2
+Transit count: 200
+Poincare R/Z shape: (200, 2, 9)
+Equilibrium surface R/Z shape: (360, 9, 2)
+Saved: QI_poincare_zeta0_zetaPiOverNFP_data.npz

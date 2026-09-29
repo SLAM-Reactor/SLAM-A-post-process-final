@@ -1,0 +1,30 @@
+ProjectName = "surface_2_1p0_100_0p85"
+which_hmap = 21
+hmap_ncfile = "surface_2_1p0_100_0p85-Gframe.nc"
+X1X2_deg = 5
+LA_deg = 5
+X1_mn_max = [8, 14]
+X2_mn_max = [8, 14]
+LA_mn_max = [8, 14]
+X1_sin_cos = "_cos_"
+X2_sin_cos = "_sin_"
+LA_sin_cos = "_sin_"
+minimize_tol = 1e-07
+totalIter = 100000
+logIter = 100
+picard_current = "auto"
+init_average_axis = true
+getBoundaryFromFile = 1
+boundary_filename = "surface_2_1p0_100_0p85-Gframe.nc"
+
+[sgrid]
+grid_type = 0
+nElems = 8
+
+[pres]
+type = "polynomial"
+coefs = [0.0]
+
+[I_tor]
+type = "polynomial"
+coefs = [0.0]

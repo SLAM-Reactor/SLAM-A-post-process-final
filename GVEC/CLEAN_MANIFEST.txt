@@ -1,0 +1,29 @@
+Clean GVEC tree
+===============
+
+This working tree keeps only the two retained equilibria and the files needed
+to regenerate the current comparison plots.
+
+Equilibria kept
+---------------
+- SLNAM
+- SLAM_N128_RHO065_CLEAN1E4
+
+Scripts kept
+------------
+- post-process/paths.py
+- post-process/plot_poincare_vs_gvec.py
+- post-process/plot_effective_ripple.py
+- post-process/plot_magnetic_well.py
+- post-process/plot_coils_gvec_modB_3d.py
+
+Data kept
+---------
+- post-process/data caches directly read by those plot scripts
+- coils/SLNAM-field-09-09-26.h5
+- coils/SLAM-field-09-09-26_2.h5
+- the two matching parameter/state/GFrame triples
+
+Full pre-clean backup
+---------------------
+../GVEC_bkp

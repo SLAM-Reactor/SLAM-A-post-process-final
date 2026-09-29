@@ -1,0 +1,30 @@
+ProjectName = "surface_3_1p0_128_1p00"
+which_hmap = 21
+hmap_ncfile = "surface_3_1p0_128_1p00-Gframe.nc"
+X1X2_deg = 5
+LA_deg = 5
+X1_mn_max = [8, 16]
+X2_mn_max = [8, 16]
+LA_mn_max = [8, 16]
+X1_sin_cos = "_cos_"
+X2_sin_cos = "_sin_"
+LA_sin_cos = "_sin_"
+minimize_tol = 1e-07
+totalIter = 100000
+logIter = 100
+picard_current = "auto"
+getBoundaryFromFile = 1
+boundary_filename = "surface_3_1p0_128_1p00-Gframe.nc"
+init_average_axis = true
+PHIEDGE = 0.01
+[sgrid]
+grid_type = 0
+nElems = 5
+
+[pres]
+type = "polynomial"
+coefs = [0.0]
+
+[I_tor]
+type = "polynomial"
+coefs = [0.0]

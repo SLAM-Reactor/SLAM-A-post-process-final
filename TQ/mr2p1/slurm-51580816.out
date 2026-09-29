@@ -1,0 +1,1720 @@
+E0414 19:52:08.867399 2356137 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:52:09.163517 2356139 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:52:09.254183 2356138 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:52:09.690857 2356140 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:53:41.909800    1137 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:53:44.008516    1139 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:53:44.156016    1138 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:53:44.461761    1140 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:55:18.859387    4861 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:55:21.830629    4860 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:55:22.069739    4862 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+E0414 19:55:22.109661    4863 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:56:56.372280    9160 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+E0414 19:56:56.400329    9161 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:56:58.194342    9162 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:56:58.645820    9163 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:58:31.707687   12322 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+E0414 19:58:33.909429   12325 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+E0414 19:58:33.952875   12323 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+E0414 19:58:33.962955   12324 pjrt_stream_executor_client.cc:3314] Execution of replica 0 failed: INTERNAL: CpuCallback error calling callback: Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/api.py", line 1114, in vmap_f
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 209, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_jit.py", line 263, in _call
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 150, in _python_pjit_helper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/batching.py", line 524, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 2111, in _pjit_batcher
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 634, in bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 650, in _true_bind
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 662, in bind_with_trace
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/core.py", line 1189, in process_primitive
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1829, in _pjit_call_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1805, in call_impl_cache_miss
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/pjit.py", line 1780, in _pjit_call_impl_python
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/profiler.py", line 364, in wrapper
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1372, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 784, in _wrapped_callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 223, in _callback
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 95, in pure_callback_impl
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/jax/_src/callback.py", line 70, in __call__
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_errors.py", line 88, in raises
+_EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+
+--------------------
+An error occurred during the runtime of your JAX program! Unfortunately you do not appear to be using `equinox.filter_jit` (perhaps you are using `jax.jit` instead?) and so further information about the error cannot be displayed. (Probably you are seeing a very large but uninformative error message right now.) Please wrap your program with `equinox.filter_jit`.
+--------------------
+
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+Traceback (most recent call last):
+  File "/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr2p1/boozer_spline.py", line 65, in <module>
+    r, z = field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2670, in field_line_integrate
+    return _field_line_integrate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2742, in _field_line_integrate
+    out = vmap_chunked(
+          ^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/batching.py", line 223, in <lambda>
+    return lambda *args, **kwargs: chunk_reduction(f(*args, **kwargs))
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "/pscratch/sd/r/rgaur/DESC/desc/magnetic_fields/_core.py", line 2791, in _intfun_wrapper
+    return diffeqsolve(
+           ^^^^^^^^^^^^
+EquinoxRuntimeError: Above is the stack outside of JIT. Below is the stack inside of JIT:
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/diffrax/_integrate.py", line 1502, in diffeqsolve
+    sol = result.error_if(sol, jnp.invert(is_okay(result)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/r/rgaur/.conda/envs/desc-env/lib/python3.12/site-packages/equinox/_module/_prebuilt.py", line 33, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+equinox.EquinoxRuntimeError: The maximum number of solver steps was reached. Try increasing `max_steps`.
+
+-------------------
+
+An error occurred during the runtime of your JAX program.
+
+1) Setting the environment variable `EQX_ON_ERROR=breakpoint` is usually the most useful
+way to debug such errors. This can be interacted with using most of the usual commands
+for the Python debugger: `u` and `d` to move up and down frames, the name of a variable
+to print its value, etc.
+
+2) You may also like to try setting `JAX_DISABLE_JIT=1`. This will mean that you can
+(mostly) inspect the state of your program as if it was normal Python.
+
+3) See `https://docs.kidger.site/equinox/api/debug/` for more suggestions.
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.

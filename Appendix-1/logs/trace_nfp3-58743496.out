@@ -1,0 +1,7 @@
+/pscratch/sd/r/rgaur/DESC3/DESC/desc/__init__.py:94: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  from pynvml import (
+loading coilset ../GVEC_bkp/coils_and_gvec/NFP3/SLNAMified_NFP3_A10p1_L_over_R_1p0_SLAM-A-lowcur.h5
+tracing 2 seeds for 300 transits, bounds_R=(1.109834262595475, 2.3369374139122447) bounds_Z=(-0.43569457718841137, 0.43569457718840904)
+finite fraction by plane: [1. 1.]
+finite fraction by seed: [1. 1.]
+wrote desc_coil_poincare_nfp3.npz

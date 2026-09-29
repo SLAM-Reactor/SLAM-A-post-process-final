@@ -1,0 +1,90 @@
+R_shift: [1.03208462]
+R_shift: [1.03208462]
+R_shift: [1.03208462]
+R_shift: [1.03208462]
+iota=-0.5654703024113283 [ 3.14159265  3.0932612   3.04492954 ... -0.23539405 -0.26494523
+ -0.29549972]
+0.0 6.246636298097329 (99, 513)
+(196, 256) (196, 256)
+/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr1p7/boozer_spline.py:446: UserWarning: linewidths is ignored by contourf
+  plt.contourf(theta_booz_2D, phi_booz_2D, B_booz, levels=50, linewidths=0.1)
+-6.7920489655865826 -0.5654703024113283 0.41790053540302097 -0.4179005085983647
+iota=-0.5660912782090511 [3.14159265 3.0932612  3.04492954 ... 0.32696412 0.28996417 0.25331534]
+0.0 6.265355228989229 (127, 513)
+(196, 256) (196, 256)
+/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr1p7/boozer_spline.py:446: UserWarning: linewidths is ignored by contourf
+  plt.contourf(theta_booz_2D, phi_booz_2D, B_booz, levels=50, linewidths=0.1)
+-6.7920489655865826 -0.5660912782090511 0.41790053540302097 -0.4179005085983647
+iota=-0.5658037117473993 [ 3.14159265  3.0932612   3.04492954 ... -3.06055682 -3.10782704
+  3.12799467]
+0.0 6.276386317582848 (151, 513)
+(196, 256) (196, 256)
+/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr1p7/boozer_spline.py:446: UserWarning: linewidths is ignored by contourf
+  plt.contourf(theta_booz_2D, phi_booz_2D, B_booz, levels=50, linewidths=0.1)
+-6.7920489655865826 -0.5658037117473993 0.41790053540302097 -0.4179005085983647
+iota=-0.5660834197368213 [ 3.14159265  3.0932612   3.04492954 ... -2.76222252 -2.80252837
+ -2.84220056]
+0.0 6.267972169563542 (195, 513)
+(196, 256) (196, 256)
+/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr1p7/boozer_spline.py:446: UserWarning: linewidths is ignored by contourf
+  plt.contourf(theta_booz_2D, phi_booz_2D, B_booz, levels=50, linewidths=0.1)
+-6.792048882466043 -0.5660834197368213 0.41790420140864626 -0.4179041149177465
+R_shift: [1.03208462]
+R_shift: [1.03208462]
+R_shift: [1.03208462]
+R_shift: [1.03208462]
+iota=-0.5666934445868048 [ 3.14159265  3.09250223  3.04341549 ... -1.07436805 -1.06723583
+ -1.06402261]
+0.0 6.278137788148513 (99, 513)
+(196, 256) (196, 256)
+/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr1p7/boozer_spline.py:446: UserWarning: linewidths is ignored by contourf
+  plt.contourf(theta_booz_2D, phi_booz_2D, B_booz, levels=50, linewidths=0.1)
+-6.792052408162271 -0.5666934445868048 0.4195774751214003 -0.4195774699103012
+iota=-0.5667131377215036 [ 3.14159265  3.09250223  3.04341549 ... -0.18387149 -0.21508663
+ -0.24681375]
+0.0 6.274425719710777 (127, 513)
+(196, 256) (196, 256)
+/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr1p7/boozer_spline.py:446: UserWarning: linewidths is ignored by contourf
+  plt.contourf(theta_booz_2D, phi_booz_2D, B_booz, levels=50, linewidths=0.1)
+-6.792052783590043 -0.5667131377215036 0.41957936306505417 -0.419579318619796
+iota=-0.5661010760564894 [3.14159265 3.0932612  3.04492954 ... 1.38063422 1.38639376 1.39592002]
+0.0 6.2620924593627265 (215, 513)
+(196, 256) (196, 256)
+/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr1p7/boozer_spline.py:446: UserWarning: linewidths is ignored by contourf
+  plt.contourf(theta_booz_2D, phi_booz_2D, B_booz, levels=50, linewidths=0.1)
+-6.792048882466043 -0.5661010760564894 0.41790420140864626 -0.4179041149177465
+iota=-0.5660659199405904 [ 3.14159265  3.0932612   3.04492954 ... -2.54478585 -2.57060127
+ -2.59417331]
+0.0 6.273799756079065 (255, 513)
+(196, 256) (196, 256)
+/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr1p7/boozer_spline.py:446: UserWarning: linewidths is ignored by contourf
+  plt.contourf(theta_booz_2D, phi_booz_2D, B_booz, levels=50, linewidths=0.1)
+-6.792048818740295 -0.5660659199405904 0.4179070120130177 -0.41790713397199397
+R_shift: [1.03208462]
+R_shift: [1.03208462]
+R_shift: [1.03208462]
+R_shift: [1.03208462]
+iota=-0.5667976800182053 [3.14159265 3.09250223 3.04341549 ... 2.14292465 2.16266554 2.17871108]
+0.0 6.258489872216629 (151, 513)
+(196, 256) (196, 256)
+/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr1p7/boozer_spline.py:446: UserWarning: linewidths is ignored by contourf
+  plt.contourf(theta_booz_2D, phi_booz_2D, B_booz, levels=50, linewidths=0.1)
+-6.792052783590043 -0.5667976800182053 0.41957936306505417 -0.419579318619796
+iota=-0.566855784798084 [3.14159265 3.09250223 3.04341549 ... 2.48869424 2.49176037 2.48981384]
+0.0 6.270419399930809 (195, 513)
+(196, 256) (196, 256)
+/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr1p7/boozer_spline.py:446: UserWarning: linewidths is ignored by contourf
+  plt.contourf(theta_booz_2D, phi_booz_2D, B_booz, levels=50, linewidths=0.1)
+-6.79205284177442 -0.566855784798084 0.41957962322567255 -0.4195796051356382
+iota=-0.5670402822985621 [3.14159265 3.09250223 3.04341549 ... 0.19537921 0.15812018 0.12125934]
+0.0 6.264917681279655 (215, 513)
+(196, 256) (196, 256)
+/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr1p7/boozer_spline.py:446: UserWarning: linewidths is ignored by contourf
+  plt.contourf(theta_booz_2D, phi_booz_2D, B_booz, levels=50, linewidths=0.1)
+-6.79205284177442 -0.5670402822985621 0.41957962322567255 -0.4195796051356382
+iota=-0.5668709539297395 [3.14159265 3.09250223 3.04341549 ... 2.37941855 2.38927126 2.3941185 ]
+0.0 6.252596342949467 (255, 513)
+(196, 256) (196, 256)
+/pscratch/sd/r/rgaur/mirrors/SLAM/post-Simons/TQ/mr1p7/boozer_spline.py:446: UserWarning: linewidths is ignored by contourf
+  plt.contourf(theta_booz_2D, phi_booz_2D, B_booz, levels=50, linewidths=0.1)
+-6.79205284177442 -0.5668709539297395 0.41957962322567255 -0.4195796051356382

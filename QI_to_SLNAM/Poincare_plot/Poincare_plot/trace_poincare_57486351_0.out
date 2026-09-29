@@ -1,0 +1,17 @@
+Case: 0p5
+Coilset: /pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/QI_to_SLNAM/SLNAMified_NFP2_A8p7_coilset_L_over_R_0p5_SLAM-A.h5
+Transit count: 10
+NFP: 2
+Seed R: [1.8      1.825333 1.850667 1.876    1.901333 1.926667 1.952    1.977333
+ 2.002667 2.028    2.053333 2.078667 2.104    2.129333 2.154667 2.18    ]
+Phi planes: [0.         1.57079633]
+Bounds R: (0.05, 2.9)
+Bounds Z: (-1.2, 1.2)
+Source grid N: 32
+Max steps: 20000
+Poincare R/Z shape: (10, 2, 16)
+Finite fraction by seed: [0.4  0.4  0.45 1.   0.35 0.05 0.25 1.   1.   0.3  0.4  0.65 0.85 0.3
+ 0.25 1.  ]
+Last finite transit by seed: [3 3 4 9 3 0 2 9 9 2 3 6 8 2 2 9]
+Outermost full seed R: 2.18
+Saved: /pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/QI_to_SLNAM/Poincare_plot/SLNAMified_L_over_R_0p5_seed_scan_ntransit10.npz

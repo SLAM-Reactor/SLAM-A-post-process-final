@@ -1,0 +1,29 @@
+{
+  "tag": "slnam216_0p92_cyl_f9n18_L20M10N20",
+  "datafile": "gvec_boundary_SLNAM_216_0p92_clean1em3.npz",
+  "psi": 0.0328277039752889,
+  "M_fit": 9,
+  "N_fit": 18,
+  "L": 20,
+  "M": 10,
+  "N": 20,
+  "maxiter": 500,
+  "boundary_fit_rms_m": 0.00036858996599627614,
+  "boundary_fit_max_m": 0.002673732864650701,
+  "dim_x": 11436,
+  "nested_initial": true,
+  "success": false,
+  "message": "Maximum number of iterations has been exceeded.",
+  "nfev": 532,
+  "nested_final": true,
+  "F_max": 2.1849318163626488,
+  "F_mean": 0.019152460463686665,
+  "iota": [
+    0.6007295910841381,
+    0.6178691647042471,
+    0.6287837140711476,
+    0.6080510653625911,
+    0.5905112127822287
+  ],
+  "wall_time_s": 1404.1561357975006
+}

@@ -1,0 +1,286 @@
+Unloading the cpe module is insufficient to restore the system defaults.
+Please run 'source
+/opt/cray/pe/cpe/26.03/restore_lmod_system_defaults.[csh|sh]'. 
+ 
+Sourcing the above script is not necessary if swapping the cpe module with a
+different version. 
+
+The following have been reloaded with a version change:
+  1) nvidia/26.5 => nvidia/25.5
+
+RUN_DIR=/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/best_gvec_t600_alpha5/SLNAM_BEST/alpha0p50pi/aLT2p50
+[32mRunning gx 
+Start time: Wed Sep 23 16:58:27 2026
+
+[0mVersion: 3865a537 	 Compiled: Fri Sep 18 20:40:43 PDT 2026 
+Using hypercollisions with coefficient proportional to kz (default).
+Using hyperdiffusion.
+[0mREADING NC GEO
+[31m[0m[35mUsing (generalized) twist-and-shift BCs. Final values are jtwist = 1, shat = -0.003588, x0 = 15.360370, y0 = 21.000000
+[0m[32mDevice 0: GPU ID: f2c2aec3-e3c2-e284-6996-e350b1c24296, GPU type: NVIDIA A100-SXM4-40GB, GPU memory usage: used = 8246.125000 MB (20.390822 %), free = 32194.250000 MB (79.609178 %)
+[32m[0m[0m[35m[0m[32mDevice 1: GPU ID: f54cd535-82ee-6d5e-ad1e-4931bc3a15ad, GPU type: NVIDIA A100-SXM4-40GB, GPU memory usage: used = 8146.125000 MB (20.143545 %), free = 32294.250000 MB (79.856455 %)
+[32m[0m[0m[35m[0m[32mDevice 2: GPU ID: 3394b6ff-f3f-8448-477b-c4e942daf274, GPU type: NVIDIA A100-SXM4-40GB, GPU memory usage: used = 8146.125000 MB (20.143545 %), free = 32294.250000 MB (79.856455 %)
+[32m[0m[0m[35m[0m[32mDevice 3: GPU ID: 1467ee6a-5dc0-1afb-b7f-5af16cc2b50, GPU type: NVIDIA A100-SXM4-40GB, GPU memory usage: used = 8050.125000 MB (19.906158 %), free = 32390.250000 MB (80.093842 %)
+[0mgx: Step       1: Time =    0.06013  dt = 6.013e-02   Phi**2 = 4.241e-05   Q_i = 1.726e-06   Gam_i = 0.000e+00   Heat_i = -2.294e-12   
+gx: Step      51: Time =    3.06684  dt = 6.013e-02   Phi**2 = 3.785e-05   Q_i = 6.506e-05   Gam_i = 0.000e+00   Heat_i = 1.781e-13   
+gx: Step     101: Time =    6.07355  dt = 6.013e-02   Phi**2 = 3.786e-05   Q_i = 1.099e-04   Gam_i = 0.000e+00   Heat_i = 1.328e-13   
+gx: Step     151: Time =    9.08026  dt = 6.013e-02   Phi**2 = 4.661e-05   Q_i = 1.838e-04   Gam_i = 0.000e+00   Heat_i = 7.368e-13   
+gx: Step     201: Time =   12.08697  dt = 6.013e-02   Phi**2 = 7.646e-05   Q_i = 3.832e-04   Gam_i = 0.000e+00   Heat_i = -1.738e-13   
+gx: Step     251: Time =   15.09369  dt = 6.013e-02   Phi**2 = 1.707e-04   Q_i = 1.022e-03   Gam_i = 0.000e+00   Heat_i = 1.205e-11   
+gx: Step     301: Time =   18.10040  dt = 6.013e-02   Phi**2 = 4.836e-04   Q_i = 3.223e-03   Gam_i = 0.000e+00   Heat_i = 4.763e-11   
+gx: Step     351: Time =   21.10711  dt = 6.013e-02   Phi**2 = 1.585e-03   Q_i = 1.118e-02   Gam_i = 0.000e+00   Heat_i = -3.691e-11   
+gx: Step     401: Time =   24.11382  dt = 6.013e-02   Phi**2 = 5.630e-03   Q_i = 4.072e-02   Gam_i = 0.000e+00   Heat_i = 4.826e-10   
+gx: Step     451: Time =   27.12053  dt = 6.013e-02   Phi**2 = 2.069e-02   Q_i = 1.493e-01   Gam_i = 0.000e+00   Heat_i = 3.195e-09   
+gx: Step     501: Time =   30.12675  dt = 5.978e-02   Phi**2 = 7.509e-02   Q_i = 5.212e-01   Gam_i = 0.000e+00   Heat_i = 9.953e-09   
+gx: Step     551: Time =   32.82726  dt = 4.907e-02   Phi**2 = 2.271e-01   Q_i = 1.460e+00   Gam_i = 0.000e+00   Heat_i = -7.251e-09   
+gx: Step     601: Time =   35.06448  dt = 3.986e-02   Phi**2 = 5.358e-01   Q_i = 3.105e+00   Gam_i = 0.000e+00   Heat_i = -7.417e-08   
+gx: Step     651: Time =   36.80030  dt = 3.084e-02   Phi**2 = 9.897e-01   Q_i = 4.982e+00   Gam_i = 0.000e+00   Heat_i = -1.512e-07   
+gx: Step     701: Time =   38.21162  dt = 2.703e-02   Phi**2 = 1.530e+00   Q_i = 6.186e+00   Gam_i = 0.000e+00   Heat_i = -4.011e-07   
+gx: Step     751: Time =   39.39817  dt = 2.025e-02   Phi**2 = 2.021e+00   Q_i = 6.013e+00   Gam_i = 0.000e+00   Heat_i = 2.856e-07   
+gx: Step     801: Time =   40.41720  dt = 2.095e-02   Phi**2 = 2.386e+00   Q_i = 5.193e+00   Gam_i = 0.000e+00   Heat_i = -3.836e-07   
+gx: Step     851: Time =   41.44095  dt = 2.001e-02   Phi**2 = 2.646e+00   Q_i = 4.169e+00   Gam_i = 0.000e+00   Heat_i = 9.406e-08   
+gx: Step     901: Time =   42.52716  dt = 2.314e-02   Phi**2 = 2.743e+00   Q_i = 3.403e+00   Gam_i = 0.000e+00   Heat_i = -1.643e-08   
+gx: Step     951: Time =   43.75601  dt = 2.588e-02   Phi**2 = 2.672e+00   Q_i = 3.056e+00   Gam_i = 0.000e+00   Heat_i = -3.367e-08   
+gx: Step    1001: Time =   45.07948  dt = 2.758e-02   Phi**2 = 2.572e+00   Q_i = 2.949e+00   Gam_i = 0.000e+00   Heat_i = -1.563e-07   
+gx: Step    1051: Time =   46.50103  dt = 2.930e-02   Phi**2 = 2.508e+00   Q_i = 2.873e+00   Gam_i = 0.000e+00   Heat_i = 4.801e-08   
+gx: Step    1101: Time =   48.04278  dt = 3.392e-02   Phi**2 = 2.513e+00   Q_i = 2.704e+00   Gam_i = 0.000e+00   Heat_i = 8.216e-08   
+gx: Step    1151: Time =   49.78621  dt = 3.288e-02   Phi**2 = 2.541e+00   Q_i = 2.577e+00   Gam_i = 0.000e+00   Heat_i = 1.046e-08   
+gx: Step    1201: Time =   51.53447  dt = 3.833e-02   Phi**2 = 2.559e+00   Q_i = 2.472e+00   Gam_i = 0.000e+00   Heat_i = -2.619e-09   
+gx: Step    1251: Time =   53.45095  dt = 3.769e-02   Phi**2 = 2.551e+00   Q_i = 2.388e+00   Gam_i = 0.000e+00   Heat_i = 5.116e-08   
+gx: Step    1301: Time =   55.48532  dt = 3.976e-02   Phi**2 = 2.492e+00   Q_i = 2.316e+00   Gam_i = 0.000e+00   Heat_i = 1.863e-08   
+gx: Step    1351: Time =   57.59890  dt = 4.457e-02   Phi**2 = 2.366e+00   Q_i = 2.270e+00   Gam_i = 0.000e+00   Heat_i = -4.104e-09   
+gx: Step    1401: Time =   59.80648  dt = 4.509e-02   Phi**2 = 2.207e+00   Q_i = 2.293e+00   Gam_i = 0.000e+00   Heat_i = 5.288e-08   
+gx: Step    1451: Time =   62.12888  dt = 4.717e-02   Phi**2 = 2.076e+00   Q_i = 2.358e+00   Gam_i = 0.000e+00   Heat_i = 7.753e-08   
+gx: Step    1501: Time =   64.49000  dt = 4.605e-02   Phi**2 = 1.979e+00   Q_i = 2.429e+00   Gam_i = 0.000e+00   Heat_i = -3.936e-09   
+gx: Step    1551: Time =   66.74726  dt = 4.414e-02   Phi**2 = 1.928e+00   Q_i = 2.563e+00   Gam_i = 0.000e+00   Heat_i = 4.061e-08   
+gx: Step    1601: Time =   68.89682  dt = 4.261e-02   Phi**2 = 1.955e+00   Q_i = 2.694e+00   Gam_i = 0.000e+00   Heat_i = 2.714e-08   
+gx: Step    1651: Time =   70.96725  dt = 4.136e-02   Phi**2 = 2.014e+00   Q_i = 2.813e+00   Gam_i = 0.000e+00   Heat_i = 6.807e-08   
+gx: Step    1701: Time =   73.17369  dt = 4.226e-02   Phi**2 = 2.089e+00   Q_i = 2.946e+00   Gam_i = 0.000e+00   Heat_i = -1.295e-08   
+gx: Step    1751: Time =   75.30474  dt = 4.176e-02   Phi**2 = 2.201e+00   Q_i = 3.071e+00   Gam_i = 0.000e+00   Heat_i = -5.043e-08   
+gx: Step    1801: Time =   77.48049  dt = 4.255e-02   Phi**2 = 2.348e+00   Q_i = 3.249e+00   Gam_i = 0.000e+00   Heat_i = 6.401e-08   
+gx: Step    1851: Time =   79.53341  dt = 4.080e-02   Phi**2 = 2.500e+00   Q_i = 3.412e+00   Gam_i = 0.000e+00   Heat_i = -8.797e-09   
+gx: Step    1901: Time =   81.61828  dt = 4.022e-02   Phi**2 = 2.641e+00   Q_i = 3.534e+00   Gam_i = 0.000e+00   Heat_i = 5.039e-08   
+gx: Step    1951: Time =   83.56257  dt = 3.928e-02   Phi**2 = 2.753e+00   Q_i = 3.594e+00   Gam_i = 0.000e+00   Heat_i = -4.036e-08   
+gx: Step    2001: Time =   85.65979  dt = 4.243e-02   Phi**2 = 2.846e+00   Q_i = 3.599e+00   Gam_i = 0.000e+00   Heat_i = 4.845e-08   
+gx: Step    2051: Time =   87.72291  dt = 3.937e-02   Phi**2 = 2.933e+00   Q_i = 3.608e+00   Gam_i = 0.000e+00   Heat_i = 6.075e-09   
+gx: Step    2101: Time =   89.71998  dt = 4.240e-02   Phi**2 = 3.037e+00   Q_i = 3.620e+00   Gam_i = 0.000e+00   Heat_i = 1.409e-08   
+gx: Step    2151: Time =   91.81533  dt = 3.913e-02   Phi**2 = 3.152e+00   Q_i = 3.636e+00   Gam_i = 0.000e+00   Heat_i = 3.316e-08   
+gx: Step    2201: Time =   93.84784  dt = 4.058e-02   Phi**2 = 3.255e+00   Q_i = 3.606e+00   Gam_i = 0.000e+00   Heat_i = -6.510e-08   
+gx: Step    2251: Time =   95.81357  dt = 4.059e-02   Phi**2 = 3.326e+00   Q_i = 3.563e+00   Gam_i = 0.000e+00   Heat_i = -3.786e-08   
+gx: Step    2301: Time =   97.91715  dt = 4.336e-02   Phi**2 = 3.409e+00   Q_i = 3.544e+00   Gam_i = 0.000e+00   Heat_i = -1.903e-08   
+gx: Step    2351: Time =  100.11318  dt = 4.486e-02   Phi**2 = 3.488e+00   Q_i = 3.558e+00   Gam_i = 0.000e+00   Heat_i = 4.064e-08   
+gx: Step    2401: Time =  102.20657  dt = 4.184e-02   Phi**2 = 3.569e+00   Q_i = 3.532e+00   Gam_i = 0.000e+00   Heat_i = -4.196e-08   
+gx: Step    2451: Time =  104.26973  dt = 4.030e-02   Phi**2 = 3.647e+00   Q_i = 3.485e+00   Gam_i = 0.000e+00   Heat_i = -5.144e-08   
+gx: Step    2501: Time =  106.43778  dt = 4.475e-02   Phi**2 = 3.730e+00   Q_i = 3.466e+00   Gam_i = 0.000e+00   Heat_i = -5.802e-08   
+gx: Step    2551: Time =  108.71788  dt = 4.673e-02   Phi**2 = 3.833e+00   Q_i = 3.449e+00   Gam_i = 0.000e+00   Heat_i = 6.825e-08   
+gx: Step    2601: Time =  110.94100  dt = 4.381e-02   Phi**2 = 3.960e+00   Q_i = 3.383e+00   Gam_i = 0.000e+00   Heat_i = -2.919e-08   
+gx: Step    2651: Time =  113.16829  dt = 4.500e-02   Phi**2 = 4.091e+00   Q_i = 3.241e+00   Gam_i = 0.000e+00   Heat_i = -6.551e-08   
+gx: Step    2701: Time =  115.43472  dt = 4.425e-02   Phi**2 = 4.174e+00   Q_i = 3.118e+00   Gam_i = 0.000e+00   Heat_i = 4.293e-09   
+gx: Step    2751: Time =  117.67173  dt = 4.344e-02   Phi**2 = 4.157e+00   Q_i = 3.014e+00   Gam_i = 0.000e+00   Heat_i = -5.838e-08   
+gx: Step    2801: Time =  119.98379  dt = 4.819e-02   Phi**2 = 4.004e+00   Q_i = 2.870e+00   Gam_i = 0.000e+00   Heat_i = -6.061e-08   
+gx: Step    2851: Time =  122.39307  dt = 4.634e-02   Phi**2 = 3.746e+00   Q_i = 2.787e+00   Gam_i = 0.000e+00   Heat_i = -3.605e-08   
+gx: Step    2901: Time =  124.71649  dt = 4.643e-02   Phi**2 = 3.457e+00   Q_i = 2.751e+00   Gam_i = 0.000e+00   Heat_i = -5.531e-08   
+gx: Step    2951: Time =  127.17074  dt = 4.951e-02   Phi**2 = 3.164e+00   Q_i = 2.770e+00   Gam_i = 0.000e+00   Heat_i = 1.662e-08   
+gx: Step    3001: Time =  129.62166  dt = 4.704e-02   Phi**2 = 2.953e+00   Q_i = 2.829e+00   Gam_i = 0.000e+00   Heat_i = 6.511e-08   
+gx: Step    3051: Time =  132.01165  dt = 4.537e-02   Phi**2 = 2.844e+00   Q_i = 2.901e+00   Gam_i = 0.000e+00   Heat_i = -5.903e-09   
+gx: Step    3101: Time =  134.31792  dt = 4.368e-02   Phi**2 = 2.810e+00   Q_i = 2.941e+00   Gam_i = 0.000e+00   Heat_i = -6.097e-09   
+gx: Step    3151: Time =  136.63717  dt = 4.796e-02   Phi**2 = 2.837e+00   Q_i = 2.991e+00   Gam_i = 0.000e+00   Heat_i = -5.652e-08   
+gx: Step    3201: Time =  139.02614  dt = 4.834e-02   Phi**2 = 2.909e+00   Q_i = 3.042e+00   Gam_i = 0.000e+00   Heat_i = -4.024e-09   
+gx: Step    3251: Time =  141.41780  dt = 4.808e-02   Phi**2 = 2.982e+00   Q_i = 3.113e+00   Gam_i = 0.000e+00   Heat_i = -2.864e-08   
+gx: Step    3301: Time =  143.71666  dt = 4.456e-02   Phi**2 = 3.059e+00   Q_i = 3.171e+00   Gam_i = 0.000e+00   Heat_i = 8.505e-08   
+gx: Step    3351: Time =  145.93105  dt = 4.360e-02   Phi**2 = 3.141e+00   Q_i = 3.187e+00   Gam_i = 0.000e+00   Heat_i = -2.037e-09   
+gx: Step    3401: Time =  148.18570  dt = 4.610e-02   Phi**2 = 3.220e+00   Q_i = 3.215e+00   Gam_i = 0.000e+00   Heat_i = -1.301e-08   
+gx: Step    3451: Time =  150.43543  dt = 4.462e-02   Phi**2 = 3.278e+00   Q_i = 3.232e+00   Gam_i = 0.000e+00   Heat_i = 4.987e-08   
+gx: Step    3501: Time =  152.68131  dt = 4.709e-02   Phi**2 = 3.338e+00   Q_i = 3.212e+00   Gam_i = 0.000e+00   Heat_i = 2.921e-08   
+gx: Step    3551: Time =  155.01368  dt = 4.639e-02   Phi**2 = 3.400e+00   Q_i = 3.166e+00   Gam_i = 0.000e+00   Heat_i = -1.861e-08   
+gx: Step    3601: Time =  157.42105  dt = 4.812e-02   Phi**2 = 3.444e+00   Q_i = 3.172e+00   Gam_i = 0.000e+00   Heat_i = 2.606e-08   
+gx: Step    3651: Time =  159.73710  dt = 4.595e-02   Phi**2 = 3.481e+00   Q_i = 3.182e+00   Gam_i = 0.000e+00   Heat_i = 6.036e-08   
+gx: Step    3701: Time =  162.00923  dt = 4.343e-02   Phi**2 = 3.530e+00   Q_i = 3.173e+00   Gam_i = 0.000e+00   Heat_i = 1.772e-08   
+gx: Step    3751: Time =  164.33113  dt = 4.806e-02   Phi**2 = 3.573e+00   Q_i = 3.110e+00   Gam_i = 0.000e+00   Heat_i = 4.491e-08   
+gx: Step    3801: Time =  166.68495  dt = 4.729e-02   Phi**2 = 3.625e+00   Q_i = 3.042e+00   Gam_i = 0.000e+00   Heat_i = -8.338e-08   
+gx: Step    3851: Time =  169.07757  dt = 4.595e-02   Phi**2 = 3.639e+00   Q_i = 2.965e+00   Gam_i = 0.000e+00   Heat_i = -1.237e-07   
+gx: Step    3901: Time =  171.43218  dt = 4.751e-02   Phi**2 = 3.599e+00   Q_i = 2.933e+00   Gam_i = 0.000e+00   Heat_i = -6.163e-08   
+gx: Step    3951: Time =  173.85418  dt = 4.643e-02   Phi**2 = 3.528e+00   Q_i = 2.885e+00   Gam_i = 0.000e+00   Heat_i = 1.754e-08   
+gx: Step    4001: Time =  176.24268  dt = 4.903e-02   Phi**2 = 3.503e+00   Q_i = 2.835e+00   Gam_i = 0.000e+00   Heat_i = -1.309e-07   
+gx: Step    4051: Time =  178.79976  dt = 4.953e-02   Phi**2 = 3.451e+00   Q_i = 2.794e+00   Gam_i = 0.000e+00   Heat_i = -5.378e-08   
+gx: Step    4101: Time =  181.30285  dt = 5.033e-02   Phi**2 = 3.394e+00   Q_i = 2.765e+00   Gam_i = 0.000e+00   Heat_i = -8.458e-08   
+gx: Step    4151: Time =  183.81368  dt = 4.885e-02   Phi**2 = 3.354e+00   Q_i = 2.767e+00   Gam_i = 0.000e+00   Heat_i = 3.273e-08   
+gx: Step    4201: Time =  186.16465  dt = 4.754e-02   Phi**2 = 3.296e+00   Q_i = 2.772e+00   Gam_i = 0.000e+00   Heat_i = 5.723e-08   
+gx: Step    4251: Time =  188.57664  dt = 5.131e-02   Phi**2 = 3.197e+00   Q_i = 2.780e+00   Gam_i = 0.000e+00   Heat_i = -1.357e-08   
+gx: Step    4301: Time =  191.06071  dt = 4.993e-02   Phi**2 = 3.098e+00   Q_i = 2.801e+00   Gam_i = 0.000e+00   Heat_i = 2.196e-08   
+gx: Step    4351: Time =  193.58094  dt = 5.079e-02   Phi**2 = 3.035e+00   Q_i = 2.857e+00   Gam_i = 0.000e+00   Heat_i = 3.551e-08   
+gx: Step    4401: Time =  196.06069  dt = 4.941e-02   Phi**2 = 3.022e+00   Q_i = 2.936e+00   Gam_i = 0.000e+00   Heat_i = 1.660e-08   
+gx: Step    4451: Time =  198.47330  dt = 4.781e-02   Phi**2 = 3.074e+00   Q_i = 2.993e+00   Gam_i = 0.000e+00   Heat_i = -2.891e-08   
+gx: Step    4501: Time =  200.80923  dt = 4.612e-02   Phi**2 = 3.161e+00   Q_i = 3.019e+00   Gam_i = 0.000e+00   Heat_i = -6.388e-08   
+gx: Step    4551: Time =  203.11291  dt = 4.604e-02   Phi**2 = 3.264e+00   Q_i = 3.047e+00   Gam_i = 0.000e+00   Heat_i = -5.885e-08   
+gx: Step    4601: Time =  205.47451  dt = 4.674e-02   Phi**2 = 3.368e+00   Q_i = 3.044e+00   Gam_i = 0.000e+00   Heat_i = -2.052e-08   
+gx: Step    4651: Time =  207.71946  dt = 4.348e-02   Phi**2 = 3.456e+00   Q_i = 3.026e+00   Gam_i = 0.000e+00   Heat_i = 1.048e-08   
+gx: Step    4701: Time =  210.04999  dt = 4.694e-02   Phi**2 = 3.561e+00   Q_i = 3.004e+00   Gam_i = 0.000e+00   Heat_i = 5.585e-08   
+gx: Step    4751: Time =  212.41871  dt = 4.658e-02   Phi**2 = 3.641e+00   Q_i = 3.003e+00   Gam_i = 0.000e+00   Heat_i = -2.168e-08   
+gx: Step    4801: Time =  214.79817  dt = 4.888e-02   Phi**2 = 3.724e+00   Q_i = 2.969e+00   Gam_i = 0.000e+00   Heat_i = -4.141e-08   
+gx: Step    4851: Time =  217.23093  dt = 5.022e-02   Phi**2 = 3.794e+00   Q_i = 2.926e+00   Gam_i = 0.000e+00   Heat_i = -1.016e-08   
+gx: Step    4901: Time =  219.65259  dt = 4.713e-02   Phi**2 = 3.757e+00   Q_i = 2.874e+00   Gam_i = 0.000e+00   Heat_i = -1.062e-07   
+gx: Step    4951: Time =  221.91843  dt = 4.398e-02   Phi**2 = 3.674e+00   Q_i = 2.810e+00   Gam_i = 0.000e+00   Heat_i = 1.160e-07   
+gx: Step    5001: Time =  224.23488  dt = 4.581e-02   Phi**2 = 3.574e+00   Q_i = 2.775e+00   Gam_i = 0.000e+00   Heat_i = -3.782e-08   
+gx: Step    5051: Time =  226.63888  dt = 5.266e-02   Phi**2 = 3.438e+00   Q_i = 2.741e+00   Gam_i = 0.000e+00   Heat_i = -1.179e-08   
+gx: Step    5101: Time =  229.14976  dt = 5.066e-02   Phi**2 = 3.262e+00   Q_i = 2.699e+00   Gam_i = 0.000e+00   Heat_i = -6.813e-08   
+gx: Step    5151: Time =  231.74877  dt = 5.088e-02   Phi**2 = 3.124e+00   Q_i = 2.690e+00   Gam_i = 0.000e+00   Heat_i = 5.545e-08   
+gx: Step    5201: Time =  234.16401  dt = 4.606e-02   Phi**2 = 3.052e+00   Q_i = 2.700e+00   Gam_i = 0.000e+00   Heat_i = -1.361e-08   
+gx: Step    5251: Time =  236.49160  dt = 4.630e-02   Phi**2 = 3.059e+00   Q_i = 2.734e+00   Gam_i = 0.000e+00   Heat_i = -7.979e-08   
+gx: Step    5301: Time =  238.88632  dt = 4.776e-02   Phi**2 = 3.112e+00   Q_i = 2.801e+00   Gam_i = 0.000e+00   Heat_i = -2.150e-08   
+gx: Step    5351: Time =  241.34632  dt = 5.067e-02   Phi**2 = 3.188e+00   Q_i = 2.836e+00   Gam_i = 0.000e+00   Heat_i = -1.132e-07   
+gx: Step    5401: Time =  243.79894  dt = 4.684e-02   Phi**2 = 3.253e+00   Q_i = 2.863e+00   Gam_i = 0.000e+00   Heat_i = -4.117e-08   
+gx: Step    5451: Time =  246.23178  dt = 5.065e-02   Phi**2 = 3.309e+00   Q_i = 2.926e+00   Gam_i = 0.000e+00   Heat_i = 5.351e-08   
+gx: Step    5501: Time =  248.53945  dt = 4.264e-02   Phi**2 = 3.349e+00   Q_i = 2.965e+00   Gam_i = 0.000e+00   Heat_i = -2.056e-08   
+gx: Step    5551: Time =  250.72721  dt = 4.617e-02   Phi**2 = 3.393e+00   Q_i = 2.964e+00   Gam_i = 0.000e+00   Heat_i = 9.065e-08   
+gx: Step    5601: Time =  253.03139  dt = 4.527e-02   Phi**2 = 3.476e+00   Q_i = 2.964e+00   Gam_i = 0.000e+00   Heat_i = 4.165e-09   
+gx: Step    5651: Time =  255.22621  dt = 4.249e-02   Phi**2 = 3.567e+00   Q_i = 2.946e+00   Gam_i = 0.000e+00   Heat_i = 3.694e-08   
+gx: Step    5701: Time =  257.51206  dt = 4.630e-02   Phi**2 = 3.635e+00   Q_i = 2.919e+00   Gam_i = 0.000e+00   Heat_i = 8.042e-08   
+gx: Step    5751: Time =  259.86506  dt = 4.666e-02   Phi**2 = 3.681e+00   Q_i = 2.901e+00   Gam_i = 0.000e+00   Heat_i = 4.093e-08   
+gx: Step    5801: Time =  262.21046  dt = 4.899e-02   Phi**2 = 3.694e+00   Q_i = 2.888e+00   Gam_i = 0.000e+00   Heat_i = -9.580e-08   
+gx: Step    5851: Time =  264.60550  dt = 4.656e-02   Phi**2 = 3.696e+00   Q_i = 2.853e+00   Gam_i = 0.000e+00   Heat_i = 1.379e-08   
+gx: Step    5901: Time =  267.07572  dt = 5.081e-02   Phi**2 = 3.708e+00   Q_i = 2.811e+00   Gam_i = 0.000e+00   Heat_i = 4.514e-08   
+gx: Step    5951: Time =  269.58907  dt = 4.961e-02   Phi**2 = 3.684e+00   Q_i = 2.784e+00   Gam_i = 0.000e+00   Heat_i = 3.826e-08   
+gx: Step    6001: Time =  272.08577  dt = 5.022e-02   Phi**2 = 3.612e+00   Q_i = 2.745e+00   Gam_i = 0.000e+00   Heat_i = -5.432e-08   
+gx: Step    6051: Time =  274.53185  dt = 5.088e-02   Phi**2 = 3.501e+00   Q_i = 2.716e+00   Gam_i = 0.000e+00   Heat_i = 2.160e-08   
+gx: Step    6101: Time =  277.01593  dt = 4.906e-02   Phi**2 = 3.397e+00   Q_i = 2.703e+00   Gam_i = 0.000e+00   Heat_i = -5.498e-08   
+gx: Step    6151: Time =  279.42762  dt = 4.881e-02   Phi**2 = 3.309e+00   Q_i = 2.692e+00   Gam_i = 0.000e+00   Heat_i = 3.219e-08   
+gx: Step    6201: Time =  281.94740  dt = 4.921e-02   Phi**2 = 3.167e+00   Q_i = 2.690e+00   Gam_i = 0.000e+00   Heat_i = 7.653e-08   
+gx: Step    6251: Time =  284.41184  dt = 5.036e-02   Phi**2 = 3.038e+00   Q_i = 2.706e+00   Gam_i = 0.000e+00   Heat_i = -4.598e-09   
+gx: Step    6301: Time =  286.89857  dt = 4.976e-02   Phi**2 = 2.968e+00   Q_i = 2.751e+00   Gam_i = 0.000e+00   Heat_i = 8.921e-08   
+gx: Step    6351: Time =  289.38735  dt = 4.951e-02   Phi**2 = 2.937e+00   Q_i = 2.820e+00   Gam_i = 0.000e+00   Heat_i = 2.510e-09   
+gx: Step    6401: Time =  291.86974  dt = 5.061e-02   Phi**2 = 2.921e+00   Q_i = 2.887e+00   Gam_i = 0.000e+00   Heat_i = -1.625e-08   
+gx: Step    6451: Time =  294.32197  dt = 4.839e-02   Phi**2 = 2.949e+00   Q_i = 2.911e+00   Gam_i = 0.000e+00   Heat_i = -9.954e-09   
+gx: Step    6501: Time =  296.71112  dt = 4.637e-02   Phi**2 = 2.995e+00   Q_i = 2.921e+00   Gam_i = 0.000e+00   Heat_i = 3.317e-08   
+gx: Step    6551: Time =  299.11428  dt = 4.843e-02   Phi**2 = 3.049e+00   Q_i = 2.965e+00   Gam_i = 0.000e+00   Heat_i = -2.384e-08   
+gx: Step    6601: Time =  301.54475  dt = 4.932e-02   Phi**2 = 3.094e+00   Q_i = 2.995e+00   Gam_i = 0.000e+00   Heat_i = 2.701e-08   
+gx: Step    6651: Time =  303.93030  dt = 4.580e-02   Phi**2 = 3.147e+00   Q_i = 2.979e+00   Gam_i = 0.000e+00   Heat_i = -5.821e-09   
+gx: Step    6701: Time =  306.25174  dt = 4.805e-02   Phi**2 = 3.223e+00   Q_i = 2.995e+00   Gam_i = 0.000e+00   Heat_i = 4.563e-08   
+gx: Step    6751: Time =  308.71183  dt = 5.040e-02   Phi**2 = 3.320e+00   Q_i = 3.031e+00   Gam_i = 0.000e+00   Heat_i = 1.457e-08   
+gx: Step    6801: Time =  311.16829  dt = 4.596e-02   Phi**2 = 3.421e+00   Q_i = 3.065e+00   Gam_i = 0.000e+00   Heat_i = 8.557e-08   
+gx: Step    6851: Time =  313.42359  dt = 4.784e-02   Phi**2 = 3.528e+00   Q_i = 3.066e+00   Gam_i = 0.000e+00   Heat_i = 1.022e-07   
+gx: Step    6901: Time =  315.81851  dt = 4.715e-02   Phi**2 = 3.609e+00   Q_i = 3.040e+00   Gam_i = 0.000e+00   Heat_i = -3.546e-08   
+gx: Step    6951: Time =  318.17879  dt = 4.669e-02   Phi**2 = 3.608e+00   Q_i = 3.002e+00   Gam_i = 0.000e+00   Heat_i = -5.092e-08   
+gx: Step    7001: Time =  320.63075  dt = 4.882e-02   Phi**2 = 3.561e+00   Q_i = 2.945e+00   Gam_i = 0.000e+00   Heat_i = -1.403e-08   
+gx: Step    7051: Time =  323.12603  dt = 5.125e-02   Phi**2 = 3.513e+00   Q_i = 2.889e+00   Gam_i = 0.000e+00   Heat_i = 1.612e-08   
+gx: Step    7101: Time =  325.56160  dt = 4.757e-02   Phi**2 = 3.476e+00   Q_i = 2.862e+00   Gam_i = 0.000e+00   Heat_i = -8.564e-09   
+gx: Step    7151: Time =  327.96490  dt = 5.007e-02   Phi**2 = 3.407e+00   Q_i = 2.859e+00   Gam_i = 0.000e+00   Heat_i = -6.548e-08   
+gx: Step    7201: Time =  330.40116  dt = 4.758e-02   Phi**2 = 3.294e+00   Q_i = 2.860e+00   Gam_i = 0.000e+00   Heat_i = 5.035e-08   
+gx: Step    7251: Time =  332.77839  dt = 4.831e-02   Phi**2 = 3.205e+00   Q_i = 2.857e+00   Gam_i = 0.000e+00   Heat_i = -2.942e-08   
+gx: Step    7301: Time =  335.21907  dt = 4.961e-02   Phi**2 = 3.192e+00   Q_i = 2.870e+00   Gam_i = 0.000e+00   Heat_i = -6.214e-09   
+gx: Step    7351: Time =  337.65019  dt = 5.072e-02   Phi**2 = 3.199e+00   Q_i = 2.905e+00   Gam_i = 0.000e+00   Heat_i = -1.702e-08   
+gx: Step    7401: Time =  340.00366  dt = 4.666e-02   Phi**2 = 3.218e+00   Q_i = 2.937e+00   Gam_i = 0.000e+00   Heat_i = 4.547e-08   
+gx: Step    7451: Time =  342.27567  dt = 4.615e-02   Phi**2 = 3.258e+00   Q_i = 2.958e+00   Gam_i = 0.000e+00   Heat_i = 7.165e-08   
+gx: Step    7501: Time =  344.66077  dt = 4.848e-02   Phi**2 = 3.322e+00   Q_i = 2.987e+00   Gam_i = 0.000e+00   Heat_i = 2.925e-08   
+gx: Step    7551: Time =  347.05945  dt = 4.764e-02   Phi**2 = 3.383e+00   Q_i = 2.969e+00   Gam_i = 0.000e+00   Heat_i = 2.410e-08   
+gx: Step    7601: Time =  349.49329  dt = 4.771e-02   Phi**2 = 3.419e+00   Q_i = 2.961e+00   Gam_i = 0.000e+00   Heat_i = 7.084e-08   
+gx: Step    7651: Time =  351.95009  dt = 4.971e-02   Phi**2 = 3.459e+00   Q_i = 2.953e+00   Gam_i = 0.000e+00   Heat_i = 6.519e-09   
+gx: Step    7701: Time =  354.32474  dt = 4.607e-02   Phi**2 = 3.504e+00   Q_i = 2.919e+00   Gam_i = 0.000e+00   Heat_i = -2.736e-08   
+gx: Step    7751: Time =  356.71077  dt = 4.743e-02   Phi**2 = 3.504e+00   Q_i = 2.906e+00   Gam_i = 0.000e+00   Heat_i = 1.148e-08   
+gx: Step    7801: Time =  359.02816  dt = 4.933e-02   Phi**2 = 3.448e+00   Q_i = 2.912e+00   Gam_i = 0.000e+00   Heat_i = -8.964e-09   
+gx: Step    7851: Time =  361.44351  dt = 4.942e-02   Phi**2 = 3.372e+00   Q_i = 2.908e+00   Gam_i = 0.000e+00   Heat_i = 2.718e-08   
+gx: Step    7901: Time =  363.92172  dt = 4.860e-02   Phi**2 = 3.273e+00   Q_i = 2.899e+00   Gam_i = 0.000e+00   Heat_i = -1.039e-08   
+gx: Step    7951: Time =  366.33830  dt = 4.754e-02   Phi**2 = 3.197e+00   Q_i = 2.891e+00   Gam_i = 0.000e+00   Heat_i = -5.130e-09   
+gx: Step    8001: Time =  368.71144  dt = 4.872e-02   Phi**2 = 3.153e+00   Q_i = 2.913e+00   Gam_i = 0.000e+00   Heat_i = 3.830e-08   
+gx: Step    8051: Time =  371.14528  dt = 4.726e-02   Phi**2 = 3.110e+00   Q_i = 2.916e+00   Gam_i = 0.000e+00   Heat_i = 3.810e-08   
+gx: Step    8101: Time =  373.47834  dt = 5.011e-02   Phi**2 = 3.119e+00   Q_i = 2.904e+00   Gam_i = 0.000e+00   Heat_i = -1.014e-08   
+gx: Step    8151: Time =  375.92023  dt = 4.945e-02   Phi**2 = 3.188e+00   Q_i = 2.901e+00   Gam_i = 0.000e+00   Heat_i = 1.528e-08   
+gx: Step    8201: Time =  378.40801  dt = 5.016e-02   Phi**2 = 3.274e+00   Q_i = 2.921e+00   Gam_i = 0.000e+00   Heat_i = 2.282e-08   
+gx: Step    8251: Time =  380.86006  dt = 4.996e-02   Phi**2 = 3.355e+00   Q_i = 2.965e+00   Gam_i = 0.000e+00   Heat_i = 1.460e-08   
+gx: Step    8301: Time =  383.26004  dt = 4.881e-02   Phi**2 = 3.432e+00   Q_i = 2.986e+00   Gam_i = 0.000e+00   Heat_i = -3.554e-08   
+gx: Step    8351: Time =  385.64456  dt = 4.853e-02   Phi**2 = 3.507e+00   Q_i = 2.989e+00   Gam_i = 0.000e+00   Heat_i = 2.699e-09   
+gx: Step    8401: Time =  388.05085  dt = 4.841e-02   Phi**2 = 3.510e+00   Q_i = 2.992e+00   Gam_i = 0.000e+00   Heat_i = 2.918e-08   
+gx: Step    8451: Time =  390.34120  dt = 4.504e-02   Phi**2 = 3.449e+00   Q_i = 2.981e+00   Gam_i = 0.000e+00   Heat_i = -4.034e-08   
+gx: Step    8501: Time =  392.72297  dt = 4.757e-02   Phi**2 = 3.350e+00   Q_i = 2.956e+00   Gam_i = 0.000e+00   Heat_i = -1.029e-08   
+gx: Step    8551: Time =  395.10836  dt = 4.940e-02   Phi**2 = 3.258e+00   Q_i = 2.967e+00   Gam_i = 0.000e+00   Heat_i = -2.292e-08   
+gx: Step    8601: Time =  397.56123  dt = 4.921e-02   Phi**2 = 3.223e+00   Q_i = 2.984e+00   Gam_i = 0.000e+00   Heat_i = -4.885e-08   
+gx: Step    8651: Time =  399.91227  dt = 4.817e-02   Phi**2 = 3.248e+00   Q_i = 3.025e+00   Gam_i = 0.000e+00   Heat_i = -8.149e-09   
+gx: Step    8701: Time =  402.24918  dt = 4.701e-02   Phi**2 = 3.308e+00   Q_i = 3.028e+00   Gam_i = 0.000e+00   Heat_i = 1.659e-09   
+gx: Step    8751: Time =  404.64938  dt = 4.817e-02   Phi**2 = 3.383e+00   Q_i = 3.008e+00   Gam_i = 0.000e+00   Heat_i = 3.648e-08   
+gx: Step    8801: Time =  407.07112  dt = 4.911e-02   Phi**2 = 3.425e+00   Q_i = 3.010e+00   Gam_i = 0.000e+00   Heat_i = 8.573e-09   
+gx: Step    8851: Time =  409.50241  dt = 5.016e-02   Phi**2 = 3.440e+00   Q_i = 3.036e+00   Gam_i = 0.000e+00   Heat_i = 4.812e-08   
+gx: Step    8901: Time =  412.01456  dt = 4.956e-02   Phi**2 = 3.404e+00   Q_i = 3.022e+00   Gam_i = 0.000e+00   Heat_i = 1.263e-07   
+gx: Step    8951: Time =  414.42310  dt = 4.787e-02   Phi**2 = 3.376e+00   Q_i = 2.990e+00   Gam_i = 0.000e+00   Heat_i = 3.391e-09   
+gx: Step    9001: Time =  416.84816  dt = 4.826e-02   Phi**2 = 3.366e+00   Q_i = 3.000e+00   Gam_i = 0.000e+00   Heat_i = -6.181e-08   
+gx: Step    9051: Time =  419.27017  dt = 4.938e-02   Phi**2 = 3.349e+00   Q_i = 2.995e+00   Gam_i = 0.000e+00   Heat_i = -7.133e-08   
+gx: Step    9101: Time =  421.66838  dt = 4.923e-02   Phi**2 = 3.348e+00   Q_i = 2.978e+00   Gam_i = 0.000e+00   Heat_i = 9.499e-08   
+gx: Step    9151: Time =  424.04846  dt = 4.720e-02   Phi**2 = 3.332e+00   Q_i = 2.960e+00   Gam_i = 0.000e+00   Heat_i = 2.825e-08   
+gx: Step    9201: Time =  426.42378  dt = 4.502e-02   Phi**2 = 3.308e+00   Q_i = 2.940e+00   Gam_i = 0.000e+00   Heat_i = 1.403e-08   
+gx: Step    9251: Time =  428.71756  dt = 4.778e-02   Phi**2 = 3.264e+00   Q_i = 2.943e+00   Gam_i = 0.000e+00   Heat_i = -1.005e-07   
+gx: Step    9301: Time =  431.11287  dt = 4.644e-02   Phi**2 = 3.252e+00   Q_i = 2.949e+00   Gam_i = 0.000e+00   Heat_i = -1.093e-08   
+gx: Step    9351: Time =  433.60624  dt = 5.170e-02   Phi**2 = 3.239e+00   Q_i = 2.916e+00   Gam_i = 0.000e+00   Heat_i = 3.612e-08   
+gx: Step    9401: Time =  436.03576  dt = 4.795e-02   Phi**2 = 3.211e+00   Q_i = 2.907e+00   Gam_i = 0.000e+00   Heat_i = 3.270e-08   
+gx: Step    9451: Time =  438.46427  dt = 4.870e-02   Phi**2 = 3.165e+00   Q_i = 2.914e+00   Gam_i = 0.000e+00   Heat_i = -1.732e-08   
+gx: Step    9501: Time =  440.96866  dt = 5.192e-02   Phi**2 = 3.123e+00   Q_i = 2.937e+00   Gam_i = 0.000e+00   Heat_i = 2.854e-08   
+gx: Step    9551: Time =  443.44454  dt = 4.647e-02   Phi**2 = 3.083e+00   Q_i = 2.954e+00   Gam_i = 0.000e+00   Heat_i = -8.076e-10   
+gx: Step    9601: Time =  445.75051  dt = 4.778e-02   Phi**2 = 3.071e+00   Q_i = 2.985e+00   Gam_i = 0.000e+00   Heat_i = -6.372e-08   
+gx: Step    9651: Time =  448.12656  dt = 4.542e-02   Phi**2 = 3.084e+00   Q_i = 3.001e+00   Gam_i = 0.000e+00   Heat_i = 4.256e-09   
+gx: Step    9701: Time =  450.45199  dt = 4.692e-02   Phi**2 = 3.088e+00   Q_i = 2.992e+00   Gam_i = 0.000e+00   Heat_i = 5.770e-09   
+gx: Step    9751: Time =  452.91775  dt = 5.026e-02   Phi**2 = 3.066e+00   Q_i = 3.037e+00   Gam_i = 0.000e+00   Heat_i = -1.884e-08   
+gx: Step    9801: Time =  455.34429  dt = 4.793e-02   Phi**2 = 3.060e+00   Q_i = 3.104e+00   Gam_i = 0.000e+00   Heat_i = 3.398e-08   
+gx: Step    9851: Time =  457.73385  dt = 4.770e-02   Phi**2 = 3.085e+00   Q_i = 3.142e+00   Gam_i = 0.000e+00   Heat_i = -4.924e-08   
+gx: Step    9901: Time =  460.14787  dt = 4.914e-02   Phi**2 = 3.110e+00   Q_i = 3.187e+00   Gam_i = 0.000e+00   Heat_i = 1.944e-08   
+gx: Step    9951: Time =  462.49224  dt = 4.663e-02   Phi**2 = 3.145e+00   Q_i = 3.228e+00   Gam_i = 0.000e+00   Heat_i = 2.138e-08   
+gx: Step   10001: Time =  464.84788  dt = 4.671e-02   Phi**2 = 3.173e+00   Q_i = 3.212e+00   Gam_i = 0.000e+00   Heat_i = -2.844e-08   
+gx: Step   10051: Time =  467.19272  dt = 4.570e-02   Phi**2 = 3.224e+00   Q_i = 3.200e+00   Gam_i = 0.000e+00   Heat_i = -4.698e-08   
+gx: Step   10101: Time =  469.57995  dt = 4.751e-02   Phi**2 = 3.285e+00   Q_i = 3.213e+00   Gam_i = 0.000e+00   Heat_i = -9.633e-09   
+gx: Step   10151: Time =  471.93871  dt = 4.569e-02   Phi**2 = 3.385e+00   Q_i = 3.233e+00   Gam_i = 0.000e+00   Heat_i = 4.306e-08   
+gx: Step   10201: Time =  474.29193  dt = 4.926e-02   Phi**2 = 3.515e+00   Q_i = 3.206e+00   Gam_i = 0.000e+00   Heat_i = 2.803e-08   
+gx: Step   10251: Time =  476.69273  dt = 4.761e-02   Phi**2 = 3.644e+00   Q_i = 3.159e+00   Gam_i = 0.000e+00   Heat_i = -3.842e-08   
+gx: Step   10301: Time =  479.09855  dt = 4.681e-02   Phi**2 = 3.762e+00   Q_i = 3.135e+00   Gam_i = 0.000e+00   Heat_i = 2.600e-08   
+gx: Step   10351: Time =  481.41732  dt = 4.711e-02   Phi**2 = 3.853e+00   Q_i = 3.088e+00   Gam_i = 0.000e+00   Heat_i = -1.076e-07   
+gx: Step   10401: Time =  483.75294  dt = 4.833e-02   Phi**2 = 3.889e+00   Q_i = 3.034e+00   Gam_i = 0.000e+00   Heat_i = 1.158e-07   
+gx: Step   10451: Time =  486.22058  dt = 4.984e-02   Phi**2 = 3.873e+00   Q_i = 2.962e+00   Gam_i = 0.000e+00   Heat_i = -6.633e-08   
+gx: Step   10501: Time =  488.64350  dt = 4.857e-02   Phi**2 = 3.794e+00   Q_i = 2.923e+00   Gam_i = 0.000e+00   Heat_i = -2.476e-08   
+gx: Step   10551: Time =  491.15324  dt = 5.097e-02   Phi**2 = 3.682e+00   Q_i = 2.873e+00   Gam_i = 0.000e+00   Heat_i = 3.411e-08   
+gx: Step   10601: Time =  493.61506  dt = 4.816e-02   Phi**2 = 3.531e+00   Q_i = 2.844e+00   Gam_i = 0.000e+00   Heat_i = -5.464e-09   
+gx: Step   10651: Time =  496.10655  dt = 5.211e-02   Phi**2 = 3.377e+00   Q_i = 2.835e+00   Gam_i = 0.000e+00   Heat_i = -3.682e-08   
+gx: Step   10701: Time =  498.67871  dt = 5.231e-02   Phi**2 = 3.222e+00   Q_i = 2.833e+00   Gam_i = 0.000e+00   Heat_i = 4.855e-08   
+gx: Step   10751: Time =  501.18470  dt = 4.947e-02   Phi**2 = 3.119e+00   Q_i = 2.880e+00   Gam_i = 0.000e+00   Heat_i = -5.706e-08   
+gx: Step   10801: Time =  503.49719  dt = 4.636e-02   Phi**2 = 3.066e+00   Q_i = 2.926e+00   Gam_i = 0.000e+00   Heat_i = 1.456e-08   
+gx: Step   10851: Time =  505.91025  dt = 5.021e-02   Phi**2 = 3.047e+00   Q_i = 2.959e+00   Gam_i = 0.000e+00   Heat_i = -2.885e-09   
+gx: Step   10901: Time =  508.39157  dt = 4.724e-02   Phi**2 = 3.022e+00   Q_i = 3.000e+00   Gam_i = 0.000e+00   Heat_i = -4.185e-08   
+gx: Step   10951: Time =  510.74862  dt = 4.778e-02   Phi**2 = 3.018e+00   Q_i = 3.070e+00   Gam_i = 0.000e+00   Heat_i = -3.832e-08   
+gx: Step   11001: Time =  513.09804  dt = 4.828e-02   Phi**2 = 3.047e+00   Q_i = 3.122e+00   Gam_i = 0.000e+00   Heat_i = -2.507e-08   
+gx: Step   11051: Time =  515.55358  dt = 4.649e-02   Phi**2 = 3.086e+00   Q_i = 3.167e+00   Gam_i = 0.000e+00   Heat_i = -1.291e-08   
+gx: Step   11101: Time =  517.87308  dt = 4.569e-02   Phi**2 = 3.145e+00   Q_i = 3.211e+00   Gam_i = 0.000e+00   Heat_i = 2.362e-08   
+gx: Step   11151: Time =  520.12732  dt = 4.635e-02   Phi**2 = 3.244e+00   Q_i = 3.236e+00   Gam_i = 0.000e+00   Heat_i = -4.437e-08   
+gx: Step   11201: Time =  522.38632  dt = 4.233e-02   Phi**2 = 3.357e+00   Q_i = 3.236e+00   Gam_i = 0.000e+00   Heat_i = 7.080e-09   
+gx: Step   11251: Time =  524.53494  dt = 4.394e-02   Phi**2 = 3.452e+00   Q_i = 3.235e+00   Gam_i = 0.000e+00   Heat_i = -2.201e-08   
+gx: Step   11301: Time =  526.78733  dt = 4.469e-02   Phi**2 = 3.534e+00   Q_i = 3.201e+00   Gam_i = 0.000e+00   Heat_i = 5.079e-08   
+gx: Step   11351: Time =  529.08229  dt = 4.548e-02   Phi**2 = 3.604e+00   Q_i = 3.176e+00   Gam_i = 0.000e+00   Heat_i = -3.514e-08   
+gx: Step   11401: Time =  531.25262  dt = 4.156e-02   Phi**2 = 3.629e+00   Q_i = 3.125e+00   Gam_i = 0.000e+00   Heat_i = 9.565e-08   
+gx: Step   11451: Time =  533.45381  dt = 4.635e-02   Phi**2 = 3.639e+00   Q_i = 3.090e+00   Gam_i = 0.000e+00   Heat_i = -5.341e-09   
+gx: Step   11501: Time =  535.83588  dt = 4.751e-02   Phi**2 = 3.669e+00   Q_i = 3.077e+00   Gam_i = 0.000e+00   Heat_i = -2.209e-08   
+gx: Step   11551: Time =  538.20376  dt = 4.426e-02   Phi**2 = 3.662e+00   Q_i = 3.061e+00   Gam_i = 0.000e+00   Heat_i = 1.764e-08   
+gx: Step   11601: Time =  540.51300  dt = 4.705e-02   Phi**2 = 3.598e+00   Q_i = 3.027e+00   Gam_i = 0.000e+00   Heat_i = -4.980e-08   
+gx: Step   11651: Time =  542.88430  dt = 4.723e-02   Phi**2 = 3.552e+00   Q_i = 2.988e+00   Gam_i = 0.000e+00   Heat_i = -1.042e-07   
+gx: Step   11701: Time =  545.32790  dt = 4.900e-02   Phi**2 = 3.499e+00   Q_i = 2.944e+00   Gam_i = 0.000e+00   Heat_i = -8.979e-09   
+gx: Step   11751: Time =  547.72879  dt = 4.909e-02   Phi**2 = 3.438e+00   Q_i = 2.928e+00   Gam_i = 0.000e+00   Heat_i = 5.630e-08   
+gx: Step   11801: Time =  550.15199  dt = 4.726e-02   Phi**2 = 3.409e+00   Q_i = 2.907e+00   Gam_i = 0.000e+00   Heat_i = -8.612e-08   
+gx: Step   11851: Time =  552.49507  dt = 4.487e-02   Phi**2 = 3.377e+00   Q_i = 2.890e+00   Gam_i = 0.000e+00   Heat_i = -9.983e-08   
+gx: Step   11901: Time =  554.87992  dt = 4.940e-02   Phi**2 = 3.319e+00   Q_i = 2.897e+00   Gam_i = 0.000e+00   Heat_i = -4.984e-09   
+gx: Step   11951: Time =  557.25733  dt = 4.764e-02   Phi**2 = 3.261e+00   Q_i = 2.886e+00   Gam_i = 0.000e+00   Heat_i = 3.840e-08   
+gx: Step   12001: Time =  559.76282  dt = 5.196e-02   Phi**2 = 3.238e+00   Q_i = 2.914e+00   Gam_i = 0.000e+00   Heat_i = -2.023e-08   
+gx: Step   12051: Time =  562.23988  dt = 4.767e-02   Phi**2 = 3.242e+00   Q_i = 2.959e+00   Gam_i = 0.000e+00   Heat_i = 1.882e-08   
+gx: Step   12101: Time =  564.59062  dt = 4.619e-02   Phi**2 = 3.252e+00   Q_i = 2.977e+00   Gam_i = 0.000e+00   Heat_i = 2.765e-10   
+gx: Step   12151: Time =  566.94805  dt = 4.706e-02   Phi**2 = 3.240e+00   Q_i = 2.985e+00   Gam_i = 0.000e+00   Heat_i = -2.430e-09   
+gx: Step   12201: Time =  569.30376  dt = 4.717e-02   Phi**2 = 3.225e+00   Q_i = 3.002e+00   Gam_i = 0.000e+00   Heat_i = 3.319e-08   
+gx: Step   12251: Time =  571.69694  dt = 4.603e-02   Phi**2 = 3.188e+00   Q_i = 3.020e+00   Gam_i = 0.000e+00   Heat_i = 5.770e-08   
+gx: Step   12301: Time =  573.95450  dt = 4.734e-02   Phi**2 = 3.131e+00   Q_i = 3.039e+00   Gam_i = 0.000e+00   Heat_i = -5.242e-08   
+gx: Step   12351: Time =  576.21410  dt = 4.550e-02   Phi**2 = 3.106e+00   Q_i = 3.081e+00   Gam_i = 0.000e+00   Heat_i = 6.997e-08   
+gx: Step   12401: Time =  578.61074  dt = 4.910e-02   Phi**2 = 3.108e+00   Q_i = 3.097e+00   Gam_i = 0.000e+00   Heat_i = 3.054e-08   
+gx: Step   12451: Time =  580.93911  dt = 4.316e-02   Phi**2 = 3.129e+00   Q_i = 3.123e+00   Gam_i = 0.000e+00   Heat_i = -3.434e-08   
+gx: Step   12501: Time =  583.10772  dt = 4.145e-02   Phi**2 = 3.170e+00   Q_i = 3.160e+00   Gam_i = 0.000e+00   Heat_i = -5.028e-08   
+gx: Step   12551: Time =  585.17362  dt = 4.184e-02   Phi**2 = 3.258e+00   Q_i = 3.218e+00   Gam_i = 0.000e+00   Heat_i = 6.218e-08   
+gx: Step   12601: Time =  587.33183  dt = 4.348e-02   Phi**2 = 3.379e+00   Q_i = 3.247e+00   Gam_i = 0.000e+00   Heat_i = -2.027e-08   
+gx: Step   12651: Time =  589.56928  dt = 4.544e-02   Phi**2 = 3.508e+00   Q_i = 3.235e+00   Gam_i = 0.000e+00   Heat_i = -3.952e-08   
+gx: Step   12701: Time =  591.83281  dt = 4.497e-02   Phi**2 = 3.625e+00   Q_i = 3.172e+00   Gam_i = 0.000e+00   Heat_i = -1.742e-08   
+gx: Step   12751: Time =  593.96619  dt = 4.362e-02   Phi**2 = 3.724e+00   Q_i = 3.120e+00   Gam_i = 0.000e+00   Heat_i = -8.789e-09   
+gx: Step   12801: Time =  596.23958  dt = 4.715e-02   Phi**2 = 3.806e+00   Q_i = 3.072e+00   Gam_i = 0.000e+00   Heat_i = 5.522e-08   
+gx: Step   12851: Time =  598.59117  dt = 4.598e-02   Phi**2 = 3.843e+00   Q_i = 3.050e+00   Gam_i = 0.000e+00   Heat_i = 2.167e-08   
+gx: Step   12881: Time =  600.02234  dt = 4.780e-02   Phi**2 = 3.863e+00   Q_i = 3.025e+00   Gam_i = 0.000e+00   Heat_i = -4.494e-08   
+Total runtime = 15.885253 min (0.073994 s / timestep)
+End time: Wed Sep 23 17:14:26 2026
+
+[0m[0m[0m

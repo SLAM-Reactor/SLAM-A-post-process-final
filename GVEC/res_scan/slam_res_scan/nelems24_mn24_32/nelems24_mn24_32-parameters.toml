@@ -1,0 +1,33 @@
+ProjectName = "SLAM_128_0p65_nelems24_mn24_32"
+which_hmap = 21
+hmap_ncfile = "surface_2_SLAM_1p0_128_0p65_clean1em4_axis_x1m0p01-Gframe.nc"
+X1X2_deg = 5
+LA_deg = 5
+X1_mn_max = [24, 32]
+X2_mn_max = [24, 32]
+LA_mn_max = [24, 32]
+X1_sin_cos = "_cos_"
+X2_sin_cos = "_sin_"
+LA_sin_cos = "_sin_"
+minimize_tol = 1e-7
+totalIter = 200000
+logIter = 100
+picard_current = "auto"
+init_average_axis = true
+average_axis_move_X1 = -0.01
+average_axis_move_X2 = 0
+PHIEDGE = 0.01
+getBoundaryFromFile = 1
+boundary_filename = "surface_2_SLAM_1p0_128_0p65_clean1em4_axis_x1m0p01-Gframe.nc"
+
+[sgrid]
+grid_type = 0
+nElems = 24
+
+[pres]
+type = "polynomial"
+coefs = [0.0]
+
+[I_tor]
+type = "polynomial"
+coefs = [0.0]

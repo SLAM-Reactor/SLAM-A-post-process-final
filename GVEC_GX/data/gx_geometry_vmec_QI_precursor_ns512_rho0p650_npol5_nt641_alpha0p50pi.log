@@ -1,0 +1,17 @@
+Running pyvmec geometry module...
+nfp = 2
+iota =  [-0.76025919]
+shat =  [-0.01363836]
+d iota / ds [-0.01227063]
+d pressure / ds [0.]
+alpha = [1.57079633] = [-1.31534089]*iota*pi/2
+zeta_center = [2.06613263] = [1.31534089]*pi/2
+pfac = 1
+sfac = 1
+***************************************************
+You have chosen not to take a cut of the flux tube.
+***************************************************
+Final (unscaled) theta grid goes from [-15.707963267948966, 15.707963267948966]
+domain_scaling_factor = 5.0 so that scaled theta grid is [-pi, pi]
+Writing eikfile in netCDF format
+

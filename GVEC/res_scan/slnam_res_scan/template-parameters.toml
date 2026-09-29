@@ -1,0 +1,45 @@
+# GVEC parameter file
+# written by pyGVEC v1.5.0
+
+ProjectName = "SLNAM_216_0p92_TAG"
+which_hmap = 21
+picard_current = "auto"
+
+X1_mn_max = [MM, NN]
+X1_sin_cos = "_cos_"
+X2_mn_max = [MM, NN]
+X2_sin_cos = "_sin_"
+LA_mn_max = [MM, NN]
+LA_sin_cos = "_sin_"
+
+X1X2_deg = 5
+LA_deg = 5
+
+minimize_tol = 1e-7
+totalIter = 200000
+logIter = 100
+
+hmap_ncfile = "surface_2_SLNAM_1p0_216_0p92_clean1e-3_axis_x1m0p01-Gframe.nc"
+init_average_axis = true
+average_axis_move_X1 = -0.01
+average_axis_move_X2 = 0
+PHIEDGE = 0.01
+getBoundaryFromFile = 1
+boundary_filename = "surface_2_SLNAM_1p0_216_0p92_clean1e-3_axis_x1m0p01-Gframe.nc"
+
+[sgrid]
+grid_type = 0
+nElems = NELEMS
+
+# --- Profiles --- #
+
+[pres]
+type = "polynomial"
+coefs = [0.0]
+
+[I_tor]
+type = "polynomial"
+coefs = [0.0]
+
+# --- Boundary and Axis degrees of freedom --- #
+

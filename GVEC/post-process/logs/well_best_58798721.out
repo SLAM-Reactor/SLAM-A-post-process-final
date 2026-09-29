@@ -1,0 +1,5 @@
+[SLNAM_BEST] loading parameter_SLNAM_216_0p92_nelems32_mn12_34_final.ini
+[SLNAM_BEST] desc_style_well min=-1.378944e-02 max=-1.160560e-05; native edge depth=-1.132302e-02
+[SLAM_BEST] loading parameter_SLAM_128_0p65_nelems24_mn24_32_final.ini
+[SLAM_BEST] desc_style_well min=-6.813216e-03 max=+2.205333e-05; native edge depth=-6.172048e-03
+wrote /pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC/post-process/data/magnetic_well_gvec_best.npz

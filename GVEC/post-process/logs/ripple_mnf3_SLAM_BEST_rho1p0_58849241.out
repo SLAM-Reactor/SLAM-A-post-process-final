@@ -1,0 +1,10 @@
+[SLAM_BEST] loading parameter_SLAM_128_0p65_nelems24_mn24_32_final.ini
+[SLAM_BEST] state loaded
+  rho=1.000 starting
+    B0 scan done: 1.00792
+    iota done: +0.588725
+    geometry done: <|grad rho|>=1.687988e+01, R0=1.517540e+00
+    Boozer M, N = 72, 96 (factor 3.0 x (24, 32))
+    Boozer line done
+  rho=1.000 iota=+0.588725 B0=1.00792 eff ripple=7.321689e-02
+wrote /pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC/post-process/data/effective_ripple_gvec_SLAM_BEST_rho1p0_mnf3.npz

@@ -1,0 +1,4 @@
+phi=0.0000: max 5.292e-02 mean 4.355e-03; GVEC zeta on plane -0.0228 .. +0.0228
+phi=1.5708: max 4.178e-02 mean 2.726e-03; GVEC zeta on plane +1.5675 .. +1.5741
+max |phi - phi0| after Newton: 8.27e-13 rad
+wrote /pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/Appendix-2/publication_normF_SLNAM/normF_GVEC_SLNAM_BEST_phi_planes.npz

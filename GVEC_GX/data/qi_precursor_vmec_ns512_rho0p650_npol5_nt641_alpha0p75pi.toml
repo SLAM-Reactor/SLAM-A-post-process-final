@@ -1,0 +1,25 @@
+[Dimensions]
+ntheta = 640
+
+[Domain]
+boundary = "linked"
+y0 = 21.0
+
+[Physics]
+beta = 0.0
+
+[Geometry]
+geo_option = "vmec"
+vmec_file = "/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/DESC_GX/data/wout_QI_precursor_OP_NFP2_A9_vacuum_final2_ns512.nc"
+alpha = 2.3561944901923448e+00
+zeta_center = 0.0
+npol = 5.0
+torflux = 0.42250000000000004
+betaprim = 0.0
+isaxisym = false
+
+[species]
+dens = [1.0, 1.0]
+temp = [1.0, 1.0]
+tprim = [0.0, 0.0]
+fprim = [1.0, 0.0]
