@@ -1,0 +1,7 @@
+00:18:44 start on nid005922
+00:18:46 claimed SLNAM_BEST rho 1.00 (job 59115608)
+[SLNAM_BEST rho 1.00] loaded (1 s); Boozer M, N = 60, 170 (MNfactor 5 x (12, 34)); grid 128 x 352
+[SLNAM_BEST rho 1.00] saved (data/conclusion/gvec_boozer_SLNAM_BEST_rho1p00.nc + npz), Bmin 0.3277 Bmax 0.4818 iota +0.6084 (2048 s)
+00:53:14 SLNAM_BEST rho 1.00 child exit 0
+not all surfaces saved yet: [('SLNAM_BEST', 0.5), ('SLNAM_BEST', 0.85)]
+00:53:14 end

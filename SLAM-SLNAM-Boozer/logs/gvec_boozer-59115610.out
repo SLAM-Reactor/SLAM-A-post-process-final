@@ -1,0 +1,11 @@
+00:18:53 start on nid004845
+00:18:55 claimed SLAM_BEST rho 0.50 (job 59115610)
+[SLAM_BEST rho 0.50] loaded (3 s); Boozer M, N = 72, 96 (MNfactor 3 x (24, 32)); grid 160 x 224
+[SLAM_BEST rho 0.50] saved (data/conclusion/gvec_boozer_SLAM_BEST_rho0p50.nc + npz), Bmin 0.6978 Bmax 1.0034 iota +0.5864 (649 s)
+00:30:00 SLAM_BEST rho 0.50 child exit 0
+00:30:00 claimed SLAM_BEST rho 1.00 (job 59115610)
+[SLAM_BEST rho 1.00] loaded (3 s); Boozer M, N = 72, 96 (MNfactor 3 x (24, 32)); grid 160 x 224
+[SLAM_BEST rho 1.00] saved (data/conclusion/gvec_boozer_SLAM_BEST_rho1p00.nc + npz), Bmin 0.6963 Bmax 1.0079 iota +0.5887 (649 s)
+00:41:10 SLAM_BEST rho 1.00 child exit 0
+not all surfaces saved yet: [('SLNAM_BEST', 0.5), ('SLNAM_BEST', 0.85), ('SLNAM_BEST', 1.0)]
+00:41:10 end
