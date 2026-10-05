@@ -1,0 +1,10 @@
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/best_gvec_t1200_alpha5/SLAM_BEST/alpha0p00/aLT1p25
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/best_gvec_t1200_alpha5/SLAM_BEST/alpha0p25pi/aLT1p25
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/best_gvec_t1200_alpha5/SLAM_BEST/alpha0p50pi/aLT1p25
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/best_gvec_t1200_alpha5/SLAM_BEST/alpha0p75pi/aLT1p25
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/best_gvec_t1200_alpha5/SLAM_BEST/alpha1p00pi/aLT1p25
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/best_gvec_t1200_alpha5/SLNAM_BEST/alpha0p00/aLT1p25
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/best_gvec_t1200_alpha5/SLNAM_BEST/alpha0p25pi/aLT1p25
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/best_gvec_t1200_alpha5/SLNAM_BEST/alpha0p50pi/aLT1p25
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/best_gvec_t1200_alpha5/SLNAM_BEST/alpha0p75pi/aLT1p25
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/best_gvec_t1200_alpha5/SLNAM_BEST/alpha1p00pi/aLT1p25

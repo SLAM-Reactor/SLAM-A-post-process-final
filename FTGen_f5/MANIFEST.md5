@@ -1,0 +1,5 @@
+25f0224892bf814be07bc682d6a43da7  data/traces/boundary_RZ_data_1p0_150_0p85.npz
+fbca57fe1f9f7c89fecd7e1faebaa612  data/alpha/alpha_data_1p0_150_0p85.npz
+5d1d9ae971ad41b409a410a5c9ad2e5e  data/pest/PEST_data_1p0_150_0p85.npz
+ac24990c5aeb47ca77da0cbb4a10c122  data/boozer/Boozer_data_1p0_150_0p85.npz
+d9c31be801f6223273f3f88a0c324c35  data/boozer/Boozer_splines_1p0_150_0p85.pkl

@@ -1,0 +1,5 @@
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p00/aLT1p25
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p25pi/aLT1p25
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p50pi/aLT1p25
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p75pi/aLT1p25
+/pscratch/sd/r/rgaur/mirrors/SLAM/SLAM-A-post-process/GVEC_GX/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha1p00pi/aLT1p25

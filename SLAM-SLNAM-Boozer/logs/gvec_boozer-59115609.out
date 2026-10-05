@@ -1,9 +1,0 @@
-00:18:44 start on nid006320
-00:18:45 claimed SLNAM_BEST rho 0.50 (job 59115609)
-[SLNAM_BEST rho 0.50] loaded (1 s); Boozer M, N = 60, 170 (MNfactor 5 x (12, 34)); grid 128 x 352
-[SLNAM_BEST rho 0.50] saved (data/conclusion/gvec_boozer_SLNAM_BEST_rho0p50.nc + npz), Bmin 0.3288 Bmax 0.4768 iota +0.6063 (2066 s)
-00:53:28 SLNAM_BEST rho 0.50 child exit 0
-DONE SLAM_BEST: rho 0.50 closed 0.78 theta_var 0.047; rho 0.85 closed 0.57 theta_var 0.080; rho 1.00 closed 0.53 theta_var 0.095
-DONE SLNAM_BEST: rho 0.50 closed 0.73 theta_var 0.065; rho 0.85 closed 0.55 theta_var 0.113; rho 1.00 closed 0.47 theta_var 0.135
-ALL DONE
-00:53:38 end

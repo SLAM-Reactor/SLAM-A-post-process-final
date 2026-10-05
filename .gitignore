@@ -1,21 +1,13 @@
 # Files above 50 MB (GitHub warns at 50 MB and rejects at 100 MB).
 # Git cannot ignore by size, so each file is listed. Regenerate the list with:
 #   find . -path ./.git -prune -o -type f -size +50M -printf '/%P\n' | sort
-# All of these are GX nonlinear outputs; see README.md, 'Large files'.
-/GVEC_GX/gx_runs/best_gvec_t600_alpha5/SLNAM_BEST/alpha0p00/aLT3p50/gx.out.nc
-/GVEC_GX/gx_runs/best_gvec_t600_alpha5/SLNAM_BEST/alpha0p00/aLT4p00/gx.out.nc
-/GVEC_GX/gx_runs/best_gvec_t600_alpha5/SLNAM_BEST/alpha0p25pi/aLT3p50/gx.out.nc
-/GVEC_GX/gx_runs/best_gvec_t600_alpha5/SLNAM_BEST/alpha0p25pi/aLT4p00/gx.out.nc
-/GVEC_GX/gx_runs/best_gvec_t600_alpha5/SLNAM_BEST/alpha0p50pi/aLT3p50/gx.out.nc
-/GVEC_GX/gx_runs/best_gvec_t600_alpha5/SLNAM_BEST/alpha0p50pi/aLT4p00/gx.out.nc
-/GVEC_GX/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p00/aLT3p00/gx.out.nc
-/GVEC_GX/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p00/aLT3p50/gx.out.nc
-/GVEC_GX/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p00/aLT4p00/gx.out.nc
-/GVEC_GX/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p25pi/aLT4p00/gx.out.nc
-/GVEC_GX/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p50pi/aLT1p50/gx.out.nc
-/GVEC_GX/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p75pi/aLT3p00/gx.out.nc
-/GVEC_GX/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p75pi/aLT3p50/gx.out.nc
-/GVEC_GX/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p75pi/aLT4p00/gx.out.nc
+# All of these are GX nonlinear outputs needed for Figure 8; ship them in the Zenodo archive.
+/GVEC_GX_f8/gx_runs/best_gvec_t1200_alpha5/SLNAM_BEST/alpha0p00/aLT1p25/gx.out.nc
+/GVEC_GX_f8/gx_runs/best_gvec_t1200_alpha5/SLNAM_BEST/alpha0p25pi/aLT1p25/gx.out.nc
+/GVEC_GX_f8/gx_runs/best_gvec_t1200_alpha5/SLNAM_BEST/alpha0p50pi/aLT1p25/gx.out.nc
+/GVEC_GX_f8/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p00/aLT3p00/gx.out.nc
+/GVEC_GX_f8/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p50pi/aLT1p50/gx.out.nc
+/GVEC_GX_f8/gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5/QI_precursor/alpha0p75pi/aLT3p00/gx.out.nc
 
 # Caches and editor state
 __pycache__/
