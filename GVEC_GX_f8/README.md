@@ -1,118 +1,68 @@
-# GVEC_GX: nonlinear ITG heat-flux data
+# Nonlinear ITG heat-flux scan
 
-GX heat-flux data for the GVEC best equilibria and the OP precursor. This
-directory contains the retained outputs needed to reproduce the two separate
-paper-style GX panels:
+GX runs for pre-SLAM (`SLNAM_BEST`), SLAM (`SLAM_BEST`), and the precursor OP
+(`QI_precursor`), at rho=0.65 with five-poloidal-turn flux tubes. The hybrids
+use BEST GVEC equilibria; OP uses DESC -> VMEC ns512 -> pyvmec geometry.
 
-- `figures/gx_Q_vs_alpha_aLT3p0.{pdf,png}` - `Q_i/Q_GB` versus field-line label
-  at `a/LT_i = 3`.
-- `figures/gx_Q_vs_aLT_max_alpha.{pdf,png}` - `Q_i/Q_GB` versus `a/LT_i`,
-  using the field line with the largest heat flux at each gradient.
+## Scan
 
-The full pre-cleanup backup is:
+Nine field lines, alpha/pi = 0, .125, .25, .375, .5, .625, .75, .875, 1,
+at a/LTi = 1, 1.25, 1.5, 2, 2.5, 3: 162 total outputs. The original
+five-alpha scan is retained; 72 added runs fill the four intervening alphas.
+All run to t=600 except pre-SLAM/SLAM at a/LTi=1.25, which run to t=1200.
 
-```text
-/home/rgaur/GVEC_GX_backup_20261005_032031
-```
+- `gx_runs/best_gvec_t600_alpha5`: original hybrid runs, excluding 1.25.
+- `gx_runs/best_gvec_t1200_alpha5`: original hybrid runs at 1.25.
+- `gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5`: original OP runs.
+- `gx_runs/refined_alpha9`: the 72 added inputs and diagnostic outputs;
+  `manifest.txt` lists paths relative to this directory.
+- `data`: GX geometry, including the four additional alphas for all cases.
 
-## Files
+Added inputs point to geometry via relative paths from each run directory.
+Large original outputs previously omitted from Git are now included after
+lossless NetCDF compression. No numerical values or GX normalizations are
+changed by compression. Restart files, large field dumps, and run logs are
+not included in this figure-data repository.
 
-- `plot_gx_heat_flux_scan_best.py` - the only retained Python script. It reads
-  the retained `gx.out.nc` files, rewrites the CSV summaries, and redraws the two
-  paper-style figures.
-- `gx_runs/best_gvec_t600_alpha5/heat_flux_per_fieldline.csv` - one row per
-  case, field line, and retained gradient.
-- `gx_runs/best_gvec_t600_alpha5/heat_flux_max_alpha.csv` - one row per case and
-  retained gradient after applying the max-alpha rule.
-- `data/*.eik.nc` - GX geometry files for SLAM_BEST, SLNAM_BEST, and
-  QI_precursor. They are kept for provenance; the retained plotting script reads
-  the GX run outputs directly.
-- `data/qi_precursor_vmec_ns512_*.toml` and `data/gx_geometry_vmec_*.log` -
-  provenance files for the QI precursor DESC-to-VMEC-to-pyvmec geometry.
-- `gx_runs/*/manifest.txt` and `gx_runs/manifest_aLT1p25.txt` - retained run
-  manifests matching the kept run directories.
+## Reproduce plots
 
-## Retained Data
-
-Cases:
-
-- `SLNAM_BEST` - pre-SLAM, from the best GVEC equilibrium in the 09-23
-  resolution scans.
-- `SLAM_BEST` - SLAM, from the best GVEC equilibrium in the 09-23 resolution
-  scans.
-- `QI_precursor` - original OP / DESC OP precursor, exported through VMEC ns512
-  and pyvmec geometry.
-
-Field lines:
-
-```text
-alpha0p00, alpha0p25pi, alpha0p50pi, alpha0p75pi, alpha1p00pi
-```
-
-Retained gradients:
-
-```text
-a/LT_i = 1.0, 1.25, 1.5, 2.0, 2.5, 3.0
-```
-
-Run trees:
-
-- `gx_runs/best_gvec_t600_alpha5` - SLAM_BEST and SLNAM_BEST t=600 runs for
-  `a/LT_i = 1.0, 1.5, 2.0, 2.5, 3.0`. The superseded t=600 `a/LT_i = 1.25`
-  SLAM/SLNAM outputs were removed.
-- `gx_runs/best_gvec_t1200_alpha5` - SLAM_BEST and SLNAM_BEST t=1200 runs for
-  `a/LT_i = 1.25` only. These replace the removed t=600 `a/LT_i = 1.25`
-  SLAM/SLNAM outputs.
-- `gx_runs/qi_precursor_pyvmec_ns512_t600_alpha5` - QI_precursor t=600 runs for
-  all retained gradients, including `a/LT_i = 1.25`.
-
-Removed data:
-
-- `a/LT_i = 3.5` and `a/LT_i = 4.0` runs.
-- `gx.big.nc`, `gx.restart.nc`, logs, job scripts, old run-generation scripts,
-  old geometry-export scripts, old time-history plots, and debug/window plots.
-
-## Redraw
-
-Use the DESC environment with `netCDF4`:
+With Python, NumPy, Matplotlib, and netCDF4 installed:
 
 ```bash
-cd /home/rgaur/SLAM-A-post-process-final/GVEC_GX_f8
-/home/rgaur/anaconda3/envs/desc-env3/bin/python plot_gx_heat_flux_scan_best.py
+python plot_gx_heat_flux_scan_best.py
+python plot_gx_peak_time_traces.py
 ```
 
-This rewrites:
+The scan plotter reads repository-relative outputs and rewrites:
 
-```text
-figures/gx_Q_vs_alpha_aLT3p0.pdf
-figures/gx_Q_vs_alpha_aLT3p0.png
-figures/gx_Q_vs_aLT_max_alpha.pdf
-figures/gx_Q_vs_aLT_max_alpha.png
-gx_runs/best_gvec_t600_alpha5/heat_flux_per_fieldline.csv
-gx_runs/best_gvec_t600_alpha5/heat_flux_max_alpha.csv
-```
+- `figures/gx_Q_vs_alpha_aLT3p0.{pdf,png}`: nine-alpha scan at a/LTi=3.
+- `figures/gx_Q_vs_aLT_max_alpha.{pdf,png}`: maximum over all nine alphas
+  separately at each gradient.
+- `figures/gx_Q_vs_alpha_all_gradients.{pdf,png}`: six gradient panels.
+- `gx_runs/best_gvec_t600_alpha5/heat_flux_per_fieldline.csv`: 162 rows.
+- `gx_runs/best_gvec_t600_alpha5/heat_flux_max_alpha.csv`: 18 selected rows.
+
+The time-trace script writes
+`figures/gx_Q_vs_t_alpha3pi8_peaks.{pdf,png,npz}` and `_stats.json`, showing
+full histories and late-time detail for pre-SLAM/SLAM at alpha=3pi/8,
+a/LTi=3. The NPZ contains both cases' time and Q_i arrays.
 
 ## Conventions
 
-- `Q_i/Q_GB` is read directly from GX `Diagnostics/HeatFlux_st[:, 0]`.
-- The value and error bar are the mean and standard deviation of the last 100
-  diagnostics.
-- The `a/LT_i` panel uses the alpha with the largest mean heat flux at each
-  gradient; alpha spread is not used as an error bar.
-- No `<|grad rho|>` re-normalization is applied.
-- Plot styling follows Figure 8 of the paper: separate panels,
-  no titles, inward ticks, simple in-axis legends, and labels
-  `Q_i/Q_GB`, `alpha`, and `a/LT_i`.
+Q_i/Q_GB is GX `Diagnostics/HeatFlux_st[:, 0]`, used as reported. Scan
+points are arithmetic means of the final 100 diagnostics; error bars are
+the temporal standard deviations of those samples. Diagnostic time spacing
+may differ between runs. The gradient plot selects the largest mean flux
+across alpha, with that run's temporal standard deviation as the error bar.
+No grad-rho or other additional normalization is applied.
 
-## Current Results
+Alpha=theta-iota*zeta labels the field line; consistently transformed
+Boozer and PEST coordinates describe the same label. Spatial plotting-origin
+choices do not alter alpha or the heat-flux data.
 
-Max-alpha values after the cleanup:
+## Execution provenance
 
-| case | alpha used | a/LT_i | Q_i/Q_GB |
-|---|---|---:|---:|
-| pre-SLAM | alpha0p75pi | 1.25 | 0.221 |
-| SLAM | alpha0p50pi | 1.25 | 0.266 |
-| DESC OP | alpha0p50pi | 1.25 | 0.952 |
-| pre-SLAM | alpha0p75pi | 3.0 | 30.026 |
-| SLAM | alpha0p50pi | 3.0 | 51.046 |
-| DESC OP | alpha0p50pi | 3.0 | 41.889 |
+The added a/LTi=3 runs were completed using regular job 60150410 and
+Jupyter allocation 60185129. The other 60 added runs were completed using
+Jupyter allocations 60185129 and 60202337. Physics settings and gradient-
+matched numerical inputs were retained; only new field lines were simulated.

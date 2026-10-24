@@ -128,8 +128,8 @@ GVEC equilibria                                    GVEC_f67/
   (`DESC_GX_f8/export_qi_desc_to_vmec_ns512.py` →
   `DESC_GX_f8/data/wout_QI_precursor_OP_NFP2_A9_vacuum_final2_ns512.nc`) → pyvmec.
 - **Runs:** `gx.in` and `gx.out.nc` files live under
-  `gx_runs/*/<case>/<alpha>/<aLT>/`: 3 cases × 5 field lines × 6 gradients = 90 GX
-  outputs. SLAM/pre-SLAM `a/L_T = 1.25` come from t = 1200 runs; all other points
+  `gx_runs/*/<case>/<alpha>/<aLT>/`: 3 cases × 9 field lines × 6 gradients = 162 GX
+  outputs, including 72 added field-line runs in `gx_runs/refined_alpha9`. SLAM/pre-SLAM `a/L_T = 1.25` come from t = 1200 runs; all other points
   come from t = 600 runs.
 - **Plot:** `plot_gx_heat_flux_scan_best.py`. Q vs. a/L_T uses the GX-reported Q_i of
   the field line with the largest flux. Error bars are the standard deviation over

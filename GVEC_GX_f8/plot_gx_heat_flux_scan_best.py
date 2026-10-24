@@ -28,6 +28,8 @@ T1200_ROOT = HERE / "gx_runs" / "best_gvec_t1200_alpha5"
 PER_RUN_OUT = RUN_ROOT / "heat_flux_per_fieldline.csv"
 MAX_OUT = RUN_ROOT / "heat_flux_max_alpha.csv"
 FIG_DIR = HERE / "figures"
+REFINED_ROOT = HERE / "gx_runs" / "refined_alpha9"
+NEW_ALPHAS = {'alpha0p125pi': .125, 'alpha0p375pi': .375, 'alpha0p625pi': .625, 'alpha0p875pi': .875}
 N_AVERAGE = 100
 ALPHA_SCAN_A_OVER_LT = 3.0
 
@@ -48,6 +50,8 @@ ALPHAS = {
     "alpha0p75pi": 0.75,
     "alpha1p00pi": 1.0,
 }
+ALPHAS.update(NEW_ALPHAS)
+ALPHAS = dict(sorted(ALPHAS.items(), key=lambda item: item[1]))
 ALPHA_TICKS = (0.0, 0.25, 0.5, 0.75, 1.0)
 ALPHA_TICK_LABELS = ("0", r"$\pi/4$", r"$\pi/2$", r"$3\pi/4$", r"$\pi$")
 A_OVER_LT_VALUES = (1.0, 1.25, 1.5, 2.0, 2.5, 3.0)
@@ -68,6 +72,8 @@ plt.rcParams.update({
 
 
 def output_path(case, alpha, tag, a_over_lt):
+    if alpha in NEW_ALPHAS:
+        return REFINED_ROOT / case / alpha / tag / "gx.out.nc"
     if case == "QI_precursor":
         return QI_ROOT / case / alpha / tag / "gx.out.nc"
     if a_over_lt == 1.25:
@@ -103,10 +109,10 @@ for case, *_ in CASES:
             q_mean, q_std = float(q.mean()), float(q.std())
             rows.append({"case": case, "alpha": alpha, "a_over_LT": a_over_lt,
                          "Q_i_mean": q_mean, "Q_i_std_time": q_std,
-                         "path": str(nc_path)})
+                         "path": str(nc_path.relative_to(HERE))})
 
 with PER_RUN_OUT.open("w", newline="") as fp:
-    writer = csv.DictWriter(fp, fieldnames=rows[0].keys())
+    writer = csv.DictWriter(fp, fieldnames=rows[0].keys(), lineterminator="\n")
     writer.writeheader()
     writer.writerows(rows)
 
@@ -121,7 +127,7 @@ for case, *_ in CASES:
         max_rows.append(dict(max(data, key=lambda r: r["Q_i_mean"])))
 
 with MAX_OUT.open("w", newline="") as fp:
-    writer = csv.DictWriter(fp, fieldnames=max_rows[0].keys())
+    writer = csv.DictWriter(fp, fieldnames=max_rows[0].keys(), lineterminator="\n")
     writer.writeheader()
     writer.writerows(max_rows)
 
@@ -161,3 +167,13 @@ print(f"wrote {PER_RUN_OUT}")
 print(f"wrote {MAX_OUT}")
 for r in max_rows:
     print(f"{r['case']:26s} a/LT={r['a_over_LT']:g} {r['alpha']:12s} Q={r['Q_i_mean']:8.3f} +/- {r['Q_i_std_time']:6.3f}")
+
+fig, axes = plt.subplots(2,3,figsize=(13,7),layout='constrained')
+for ax, lt in zip(axes.flat,A_OVER_LT_VALUES):
+    for case,label,color,marker in CASES:
+        selected=[r for r in rows if r['case']==case and r['a_over_LT']==lt]
+        ax.errorbar([ALPHAS[r['alpha']] for r in selected], [r['Q_i_mean'] for r in selected], yerr=[r['Q_i_std_time'] for r in selected],color=color,marker=marker,markersize=3,lw=1,capsize=2,label=label)
+    ax.set_title(f'a/LTi = {lt:g}');ax.set_xlabel(r'$\alpha/\pi$');ax.set_ylabel(r'$Q_i/Q_{GB}$');ax.set_ylim(bottom=0);ax.grid(alpha=.15)
+axes.flat[0].legend(frameon=False,fontsize=9)
+for ext in ['pdf','png']:fig.savefig(FIG_DIR/f'gx_Q_vs_alpha_all_gradients.{ext}',dpi=200,bbox_inches='tight')
+plt.close(fig)
